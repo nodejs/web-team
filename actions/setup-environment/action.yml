@@ -12,7 +12,7 @@ inputs:
   ref:
     description: 'The ref to checkout'
     required: false
-    default: ''
+    default: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || github.ref }}
   fetch-depth:
     description: 'The fetch depth'
     required: false
