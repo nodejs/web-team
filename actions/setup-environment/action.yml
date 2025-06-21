@@ -5,6 +5,10 @@ inputs:
     description: 'Whether to use pnpm (true) or npm (false)'
     required: false
     default: 'false'
+  install-flags:
+    description: 'Additional installation flags'
+    required: false
+    default: ''
   ref:
     description: 'The ref to checkout'
     required: false
@@ -58,9 +62,9 @@ runs:
     - name: Install dependencies with pnpm
       if: inputs.pnpm == 'true'
       shell: bash
-      run: pnpm install --frozen-lockfile
+      run: pnpm install --frozen-lockfile ${{ inputs.install-flags }}
 
     - name: Install dependencies with npm
       if: inputs.pnpm != 'true'
       shell: bash
-      run: npm ci
+      run: npm ci ${{ inputs.install-flags }}
