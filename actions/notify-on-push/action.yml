@@ -1,5 +1,10 @@
-name: 'Slack Notify Composite'
-description: 'Sends a Slack notification for direct pushes to a branch'
+name: "Slack Notify Composite"
+description: "Sends a Slack notification for direct pushes to a branch"
+
+inputs:
+  webhook:
+    description: "The Slack webhook"
+    required: true
 
 runs:
   using: "composite"
@@ -7,7 +12,7 @@ runs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@e31e87e03dd19038e411e38ae27cbad084a90661
       env:
-        SLACK_COLOR: '#DE512A'
+        SLACK_COLOR: "#DE512A"
         SLACK_ICON: https://github.com/nodejs.png?size=48
         SLACK_TITLE: ${{ github.actor }} directly pushed to ${{ github.ref }}
         SLACK_MESSAGE: |
@@ -16,4 +21,4 @@ runs:
           Before: <https://github.com/${{ github.repository }}/commit/${{ github.event.before }}|${{ github.event.before }}>
           After: <https://github.com/${{ github.repository }}/commit/${{ github.event.after }}|${{ github.event.after }}>
         SLACK_USERNAME: nodejs-bot
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_WEBHOOK: ${{ inputs.webhook }}

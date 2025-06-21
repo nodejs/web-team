@@ -1,18 +1,18 @@
-import { readFile } from 'node:fs/promises';
+import { readFile } from "node:fs/promises";
 
 const CONFIG = {
-  FILE: 'MEMBERS.md',
-  HEADER: '## Node.js Website Team (`@nodejs/nodejs-website`)',
+  FILE: "MEMBERS.md",
+  HEADER: "## Node.js Website Team (`@nodejs/nodejs-website`)",
   INACTIVE_MONTHS: 12,
-  ISSUE_TITLE: 'Inactive Collaborator Report',
-  ISSUE_LABELS: ['meta', 'inactive-collaborator-report'],
+  ISSUE_TITLE: "Inactive Collaborator Report",
+  ISSUE_LABELS: ["meta", "inactive-collaborator-report"],
 };
 
 // Get date N months ago in YYYY-MM-DD format
 const getDateMonthsAgo = (months = CONFIG.INACTIVE_MONTHS) => {
   const date = new Date();
   date.setMonth(date.getMonth() - months);
-  return date.toISOString().split('T')[0];
+  return date.toISOString().split("T")[0];
 };
 
 // Check if there's already an open issue
@@ -21,7 +21,7 @@ async function hasOpenIssue(github, context) {
   const { data: issues } = await github.rest.issues.listForRepo({
     owner,
     repo,
-    state: 'open',
+    state: "open",
     labels: CONFIG.ISSUE_LABELS[1],
     per_page: 1,
   });
@@ -31,17 +31,16 @@ async function hasOpenIssue(github, context) {
 
 // Parse collaborator usernames from governance file
 async function parseCollaborators() {
-  const content = await readFile(CONFIG.FILE, 'utf8');
-  const lines = content.split('\n');
+  const content = await readFile(CONFIG.FILE, "utf8");
+  const lines = content.split("\n");
   const collaborators = [];
 
-  const startIndex =
-    lines.findIndex(l => l.startsWith(CONFIG.HEADER)) + 1;
+  const startIndex = lines.findIndex((l) => l.startsWith(CONFIG.HEADER)) + 1;
   if (startIndex <= 0) return collaborators;
 
   for (let i = startIndex; i < lines.length; i++) {
     const line = lines[i];
-    if (line.startsWith('#')) break;
+    if (line.startsWith("#")) break;
 
     const match = line.match(/^\s*-\s*\[([^\]]+)\]/);
     if (match) collaborators.push(match[1]);
@@ -90,7 +89,7 @@ Checking for inactivity since: ${cutoffDate}
 
 | Login |
 | ----- |
-${inactiveMembers.map(m => `| @${m} |`).join('\n')}
+${inactiveMembers.map((m) => `| @${m} |`).join("\n")}
 
 ## What happens next?
 
@@ -122,8 +121,8 @@ export default async function (github, context) {
   const inactiveMembers = await getInactiveUsers(
     github,
     collaborators,
-    `${context.repo.owner}/${context.repo.repo}`,
-    cutoffDate
+    "nodejs/nodejs.org",
+    cutoffDate,
   );
   const report = formatReport(inactiveMembers, cutoffDate);
 
