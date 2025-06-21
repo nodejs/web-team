@@ -29,6 +29,10 @@ inputs:
     description: 'Optional registry URL for Node.js setup'
     required: false
     default: ''
+  token:
+    description: 'The token to use for checkout'
+    required: false
+    default: ${{ secrets.GITHUB_TOKEN }}
 
 runs:
   using: 'composite'
@@ -43,6 +47,7 @@ runs:
       with:
         ref: ${{ inputs.ref }}
         fetch-depth: ${{ inputs.fetch-depth }}
+        token: ${{ inputs.token }}
 
     - name: Setup Node.js (with version file)
       if: inputs.use-version-file == 'true'
