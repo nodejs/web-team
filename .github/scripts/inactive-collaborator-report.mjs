@@ -83,7 +83,7 @@ async function getInactiveUsers(github, usernames, repo, cutoffDate) {
 
     // Check issues and PRs
     const { data: issues } = await github.rest.search.issuesAndPullRequests({
-      q: `involves:${username} repo:${repo} updated:>=${cutoffDate}`,
+      q: `commenter:${username} repo:${repo} updated:>=${cutoffDate}`,
       per_page: 1,
     });
 
