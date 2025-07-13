@@ -42,7 +42,7 @@ async function parseCollaborators() {
     const line = lines[i];
     if (line.startsWith("#")) break;
 
-    const match = line.match(/^\s*-\s*\[([^\]]+)\]/);
+    const match = line.match(/^\s*-\s*@\[([^\]]+)\]/);
     if (match) collaborators.push(match[1]);
   }
 
