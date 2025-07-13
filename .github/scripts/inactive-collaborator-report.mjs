@@ -56,9 +56,9 @@ async function parseCollaborators() {
       break;
     }
 
-    const match = line.match(/^\s*-\s*@\[([^\]]+)\]/);
+    const match = line.match(/^\s*-\s*\[([^\]]+)\]/);
     if (match) {
-      collaborators.push(match[1]);
+      collaborators.push(match[1].slice(1));
       console.log(`Found collaborator: ${match[1]}`);
     }
   }
