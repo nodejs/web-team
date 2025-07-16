@@ -1,8 +1,8 @@
-# Web Infrastructure Onboarding
+# @nodejs/web-infra Onboarding
 
-This document is an outline of the tasks necessary to onboard a new member of the Web Infrastructure team.
+This document is an outline of the tasks necessary to onboard a new member of the Web Infrastructure team (@nodejs/web-infra).
 
-Please note these tasks should only be performed after the person's nomination has passed.
+Please note these tasks should only be performed after an individual's nomination has passed.
 
 ## Tasks
 
@@ -18,6 +18,10 @@ Tasks prefixed by `Web Admin:` are for a member of `@nodejs/web-admins` to compl
 - [ ] Member: Open an issue in [nodejs/admin](https://github.com/nodejs/admin) requesting access to the Web Infra 1Password vault.
 - [ ] Web Admin: Invite member to Node.js' Sentry account.
   - [ ] Member: Enable physical or passkey 2FA on their Sentry account.
+- [ ] Web Admin: Invite member to Node.js' Vercel account.
+  - [ ] Member: Enable physical or passkey 2FA on their Vercel account.
 
-Note there isn't currently a set level of access that Web Infra members has to some resources such as Cloudflare.
+There currently is not a set level of access that @nodejs/web-infra members have on Cloudflare.
+
+Should you need additional access, it may be granted, however, access is not given by default.
 You may be granted access if needed, but will not be given it initially since we do not control it.
