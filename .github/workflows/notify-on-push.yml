@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Notify on Push
+permissions:
+  contents: read
+
+jobs:
+  notify_on_push:
+    name: Notify on any direct push to `main`
+    if: >
+      github.repository == 'nodejs/web-team' &&
+      github.actor != 'github-merge-queue[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: ./actions/notify-on-push
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK }}
