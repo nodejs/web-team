@@ -31,12 +31,6 @@ Members of this team are nominated either by the Node.js Technical Steering Comm
 
 \* This team has access to infrastructure providers directly related to the Website only, such as Vercel. Other providers that are shared beyond the Website may be controlled by other teams (for example, the Node.js Build WG owns Cloudflare).
 
-### Node.js Web Standards Team (`@nodejs/web-standards`)
-
-The Node.js Web Standards Team is composed of Node.js Collaborators and External Collaborators that have extensive experience or expertisè on Web Standards, such as Ecma262. The Standards Team is responsible for guiding and serving as points of contact when either Node.js Collaborators, the Node.js Technical Steering Committee (TSC), or the Web Team, requires assistance or guidance regarding Web Standards.
-
-Members of this team are nominated by the Node.js Technical Steering Committee (TSC). Note that members of the Node.js Web Team might also recommend people for nomination.
-
 ### Node.js UX & Design Team (`@nodejs/ux-and-design`)
 
 The Node.js UX & Design Team is composed of Node.js Collaborators and External Collaborators that have experience or expertisè with UX & Design. The UX & Design Team is responsible for guiding and serving as points of contact when members of the Node.js Web Team require assistance or guidance regarding UX & Design.
@@ -49,6 +43,6 @@ Members of this team are nominated by the Node.js Technical Steering Committee (
 
 As seen above, the different teams under the Node.js Web Team umbrella are responsible for having the oversight on different aspects of Node.js's Web-related projects. However, it is important to note that the Node.js Web Team is not a set of siloed teams, but rather a set of teams that work together to achieve the same goal: Providing the best Web Experience for Node.js.
 
-Following this line of thought, the Web Infra Team is responsible for the technical aspects of the Node.js Website (Infrastructure, Framework, CI/CD, etc); The Website Team is responsible for the day-to-day development of the Node.js Website; The UX and Design Team advise on Design Matters and the Web Standards Team advise on best-practices for Web APIs and Web Technologies/Standards.
+Following this line of thought, the Web Infra Team is responsible for the technical aspects of the Node.js Website (Infrastructure, Framework, CI/CD, etc); The Website Team is responsible for the day-to-day development of the Node.js Website; The UX and Design Team advise on Design Matters.
 
 But above all, the Web Team should work together to better the Web Experience for Node.js, aiming to provide the best experience for Node.js users.
