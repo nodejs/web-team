@@ -17,8 +17,6 @@
 - [@manishprivet](https://github.com/manishprivet) - **Manish Kumar** (he/him)
 - [@mikeesto](https://github.com/mikeesto) - **Michael Esteban** (he/him)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
-- [@SEWeiTung](https://github.com/SEWeiTung) - **Wei Tung**
-- [@shanpriyan](https://github.com/shanpriyan) - **Shanmughapriyan S**
 
 ## Node.js Web Infra Team (`@nodejs/web-infra`)
 
