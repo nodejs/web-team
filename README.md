@@ -2,7 +2,7 @@
 
 This repository contains the governance documentation, workflows, and shared resources for the Node.js Web Team (@nodejs/web) and its subteams.
 
-## Team Structure
+## Sub-Team Structure
 
 The Node.js Web Team consists of four specialized subteams:
 
