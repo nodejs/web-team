@@ -6,7 +6,7 @@ This document outlines the process for the Node.js Web Team meetings.
 
 The Web Team holds meetings every 4 weeks to discuss and align on key topics related to Node.js web properties. These meetings help move initiatives forward more efficiently than asynchronous communication alone.
 
-For exact dates and times, refer to the [Node.js Calendar](https://nodejs.org/calendar)
+For exact dates and times, refer to the [Node.js Calendar](https://nodejs.org/calendar).
 
 In rare cases, a Web Team member may call for an additional meeting outside the regular monthly schedule if there are urgent matters that cannot wait until the next scheduled meeting. All other meeting procedures still apply.
 
