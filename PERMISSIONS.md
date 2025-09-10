@@ -4,13 +4,13 @@
 
 | Repository                               | Everyone | @nodejs/web | @nodejs/nodejs-website | @nodejs/web-infra | @nodejs/web-admins | Notes |
 | ---------------------------------------- | -------- | ----------- | ---------------------- | ----------------- | ------------------ | ----- |
-| **[nodejs/discord-status-worker][]**     | Read     | –           | –                      | Maintain          | Admin              |       |
-| **[nodejs/doc-kit][]**                   | Read     | –           | Write                  | Maintain          | Admin              |       |
+| **[nodejs/discord-status-worker][]**     | Read     | -           | -                      | Maintain          | Admin              |       |
+| **[nodejs/doc-kit][]**                   | Read     | -           | Write                  | Maintain          | Admin              |       |
 | **[nodejs/node.js.org][]**               | Read     | Write       | -                      | Maintain          | Admin              |       |
 | **[nodejs/nodejs.dev][]**                | Read     | -           | Write                  | Maintain          | Admin              |       |
 | **[nodejs/nodejs.org][]**                | Read     | -           | Write                  | Maintain          | Admin              |       |
 | **[nodejs/nodejs.org-archive][]**        | Read     | Write       | -                      | Maintain          | Admin              |       |
-| **[nodejs/release-cloudflare-worker][]** | Read     | –           | –                      | Maintain          | Admin              |       |
+| **[nodejs/release-cloudflare-worker][]** | Read     | -           | -                      | Maintain          | Admin              |       |
 | **[nodejs/web-team][]**                  | Read     | Triage      | Maintain               | -                 | Admin              |       |
 | **[nodejs/website-cloudflare-worker][]** | -        | -           | -                      | Maintain          | Admin              |       |
 
