@@ -29,8 +29,8 @@
 ## Access Tokens
 
 | Secret Name                | Display Name          | Platform(s) / Location(s)                                              | Associated Project(s) | Access Level | Expiry | Notes                                       |
-| -------------------------- | --------------------- | ---------------------------------------------------------------------- | --------------------- | ------------ | ------ | ------------------------------------------- | ----------------------------------------- |
-| `CF_API_TOKEN`             | N/A                   | [nodejs/discord-status-worker][], [nodejs/release-cloudflare-worker][] | [Cloudflare][]        | Write        | -      |                                             | Used for deploying to Cloudflare Wrangler |
+| -------------------------- | --------------------- | ---------------------------------------------------------------------- | --------------------- | ------------ | ------ | ------------------------------------------- |
+| `CF_API_TOKEN`             | N/A                   | [nodejs/discord-status-worker][], [nodejs/release-cloudflare-worker][] | [Cloudflare][]        | Write        | -      | Used for deploying to Cloudflare Wrangler   |
 | `CROWDIN_GITHUB_BOT_TOKEN` | **[@nodejs-crowdin]** | [nodejs/nodejs.org][]                                                  | [nodejs/nodejs.org][] | Write        | -      | Used for localization workflows via Crowdin |
 
 [1Password]: https://1password.com/
