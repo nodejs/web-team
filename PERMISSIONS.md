@@ -26,7 +26,7 @@
 | **[Crowdin][]**              | Read                               | -           | -                      | Admin             | Admin              | Access to this service may be granted to outside collaborators on a case-by-case, language-by-language basis.                |
 | **[Figma][]**                | Read                               | -           | Write                  | -                 | -                  | Access to this service is controlled by the OpenJS Foundation and @avivkeller, and only covers website-related design files. |
 | **[Sentry][]**               | -                                  | -           | -                      | Admin             | Admin              |                                                                                                                              |
-| **[Vercel][]**               | -                                  | -           | -                      | Admin             | Admin              |                                                                                                                              |
+| **[Vercel][]**               | -                                  | -           | -                      | Admin             | Admin              | Along with individual access, credentials for a user with elevated exist in 1Password. |
 
 ## Access Tokens & Automations
 
