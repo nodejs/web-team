@@ -16,30 +16,35 @@
 
 ## External Services
 
-| Service                   | Everyone | @nodejs/web | @nodejs/nodejs-website | @nodejs/web-infra | @nodejs/web-admins | Notes                                                                                                                      |
-| ------------------------- | -------- | ----------- | ---------------------- | ----------------- | ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| **[1Password][]**         | -        | -           | -                      | Admin             | Admin              |                                                                                                                            |
-| **[Chromatic][]**         | Read     | -           | Write                  | Admin             | Admin              | Access to this service is granted via GitHub authentication.                                                               |
-| **[Cloudflare][]**        | -        | -           | -                      | Read              | Admin              | Access to this service is controlled by @nodejs/build. Additional access may be granted on a case-by-case basis.           |
-| **[Codecov][]**           | Read     | -           | Admin                  | Admin             | Admin              | Access to this service is granted via GitHub. authentication Access to this service only covers repositories listed above. |
-| **[Figma Design File][]** | Read     | -           | Write                  | -                 | -                  | Access to this service is controlled by the OpenJS Foundation and @avivkeller.                                             |
-| **[Sentry][]**            | -        | -           | -                      | Admin             | Admin              |                                                                                                                            |
-| **[Vercel][]**            | -        | -           | -                      | Admin             | Admin              |                                                                                                                            |
+| Service                      | Everyone | @nodejs/web | @nodejs/nodejs-website | @nodejs/web-infra | @nodejs/web-admins | Notes                                                                                                                        |
+| ---------------------------- | -------- | ----------- | ---------------------- | ----------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| **[1Password][]**            | -        | -           | -                      | Admin             | Admin              |                                                                                                                              |
+| **[Atlassian Statuspage][]** | -        | -           | -                      | Admin             |                    |
+| **[Chromatic][]**            | Read     | -           | Write                  | Admin             | Admin              | Access to this service is granted via GitHub authentication.                                                                 |
+| **[Cloudflare][]**           | -        | -           | -                      | Read              | Admin              | Access to this service is controlled by @nodejs/build. Additional access may be granted on a case-by-case basis.             |
+| **[Codecov][]**              | Read     | -           | Admin                  | Admin             | Admin              | Access to this service is granted via GitHub authentication, and only related to the repository above.                       |
+| **[Crowdin][]**              | Read     | -           | -                      | Admin             | Admin              | Access to this service may be granted to outside collaborators on a case-by-case, language-by-language basis.                |
+| **[Figma][]**                | Read     | -           | Write                  | -                 | -                  | Access to this service is controlled by the OpenJS Foundation and @avivkeller, and only covers website-related design files. |
+| **[Sentry][]**               | -        | -           | -                      | Admin             | Admin              |                                                                                                                              |
+| **[Vercel][]**               | -        | -           | -                      | Admin             | Admin              |                                                                                                                              |
 
-## Access Tokens
+## Access Tokens & Automations
 
-| Secret Name                | Display Name          | Platform(s) / Location(s)                                              | Associated Project(s) | Access Level | Expiry | Notes                                       |
-| -------------------------- | --------------------- | ---------------------------------------------------------------------- | --------------------- | ------------ | ------ | ------------------------------------------- |
-| `CF_API_TOKEN`             | N/A                   | [nodejs/discord-status-worker][], [nodejs/release-cloudflare-worker][] | [Cloudflare][]        | Write        | -      | Used for deploying to Cloudflare Wrangler   |
-| `CROWDIN_GITHUB_BOT_TOKEN` | **[@nodejs-crowdin]** | [nodejs/nodejs.org][]                                                  | [nodejs/nodejs.org][] | Write        | -      | Used for localization workflows via Crowdin |
+| Secret Name                | Display Name            | Platform(s) / Location(s)                                              | Associated Project(s)                     | Access Level | Expiry | Notes                                       |
+| -------------------------- | ----------------------- | ---------------------------------------------------------------------- | ----------------------------------------- | ------------ | ------ | ------------------------------------------- |
+| `CF_API_TOKEN`             | N/A                     | [nodejs/discord-status-worker][], [nodejs/release-cloudflare-worker][] | [Cloudflare][]                            | Write        | -      | Used for deploying to Cloudflare Wrangler   |
+| `CROWDIN_GITHUB_BOT_TOKEN` | **[@nodejs-crowdin][]** | [nodejs/nodejs.org][]                                                  | [nodejs/nodejs.org][]                     | Write        | -      | Used for localization workflows via Crowdin |
+| N/A                        | [**@openjs-vercel**][]  | Vercel                                                                 | [nodejs/nodejs.org][], [nodejs/doc-kit][] | Admin        | -      | Used for deployments                        |
 
 [1Password]: https://1password.com/
 [@nodejs-crowdin]: https://github.com/nodejs-crowdin
 [@openjs-vercel]: https://github.com/openjs-vercel
+[Atlassian Statuspage]: https://manage.statuspage.io/pages/rxy2rhgm8q1n/incidents
 [Chromatic]: https://www.chromatic.com/builds?appId=64c7d71358830e9105808652
 [Cloudflare]: https://www.cloudflare.com/
 [Codecov]: https://app.codecov.io/github/nodejs
-[Figma Design File]: https://www.figma.com/file/a10cjjw3MzvRQMPT9FP3xz
+[Crowdin]: https://crowdin.com/project/nodejs-web
+[Figma]: https://www.figma.com/file/a10cjjw3MzvRQMPT9FP3xz
 [nodejs/discord-status-worker]: https://github.com/nodejs/discord-status-worker
 [nodejs/doc-kit]: https://github.com/nodejs/doc-kit
 [nodejs/node.js.org]: https://github.com/nodejs/node.js.org
