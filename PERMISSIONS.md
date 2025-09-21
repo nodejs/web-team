@@ -41,7 +41,7 @@
 [@openjs-vercel]: https://github.com/openjs-vercel
 [Atlassian Statuspage]: https://manage.statuspage.io/pages/rxy2rhgm8q1n/incidents
 [Chromatic]: https://www.chromatic.com/builds?appId=64c7d71358830e9105808652
-[Cloudflare]: https://www.cloudflare.com/
+[Cloudflare]: https://dash.cloudflare.com/07be8d2fbc940503ca1be344714cb0d1
 [Codecov]: https://app.codecov.io/github/nodejs
 [Crowdin]: https://crowdin.com/project/nodejs-web
 [Figma]: https://www.figma.com/file/a10cjjw3MzvRQMPT9FP3xz
