@@ -53,7 +53,7 @@ When in doubt, start at higher severity and downgrade later.
 
 ## Communications
 
-**Internal (private):** `@nodejs/web-infra` channel/thread; if Cloudflare account action is required, loop in `@nodejs/build`. 
+**Internal (private):** `@nodejs/web` or `@nodejs/web-infra` channel/thread; if Cloudflare account action is required, loop in `@nodejs/build`. 
 
 **Public (as needed):** short status updates; if user impact was material, publish a brief blog post or addendum to an incident page (example precedent exists).
 
