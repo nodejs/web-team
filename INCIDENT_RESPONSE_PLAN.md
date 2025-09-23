@@ -1,4 +1,4 @@
-# Node.js Web-Infra — Incident Response Plan (IRP)
+# Incident Response Plan (IRP)
 
 ## Scope
 
