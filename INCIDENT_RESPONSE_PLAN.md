@@ -2,13 +2,9 @@
 
 ## Scope
 
-This IRP covers incidents affecting Node.js web properties and supporting services operated by **@nodejs/web-infra** and **@nodejs/web-admins**, including:
+This IRP covers incidents affecting Node.js web properties and supporting services operated by the **@nodejs/web** team.
 
-* Repositories: `nodejs.org`, `nodejs.dev`, `node.js.org`, `website-cloudflare-worker`, `discord-status-worker`, `release-cloudflare-worker`, `doc-kit`
-
-* External services: **Cloudflare** (zones, Workers, WAF, DNS), **Vercel** (deployments), **Sentry** (monitoring), **1Password** (secrets), **Chromatic/Codecov** (integrations). Cloudflare account access is governed together with **@nodejs/build**; `web-infra` generally has Write, `web-admins` Admin. 
-
-This plan excludes CI/build farm operations and distribution servers primarily owned by **nodejs/build**, but includes Web-Infra automations that touch them (e.g., release workers) and any user-visible impact on `nodejs.org`. 
+For a list of covered services and repositories, refer to [PERMISSIONS.md](./PERMISSIONS.md).
 
 ## IC & Escalation
 
