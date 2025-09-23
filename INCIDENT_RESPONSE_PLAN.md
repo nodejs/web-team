@@ -47,9 +47,12 @@ When in doubt, start at higher severity and downgrade later.
 
 ## Common Incidents — What Happens & What They Cause
 
-| Incident | Likely Cause | What users see | Immediate actions | Primary owner |
-| ----- | ----- | ----- | ----- | ----- |
-| **Token/secret leak in repo (EXAMPLE)** | Accidental commit or exposed CI logs. | Subsequent unauthorized changes/deploys. | Invalidate in provider; rotate in 1Password; hunt for usage in audit logs; force redeploy clean. | Service owner + Web-Admins. ([GitHub](https://raw.githubusercontent.com/nodejs/web-team/1cc6db145256efaaa5d11684249361139dff602c/PERMISSIONS.md)) |
+| Incident                            | Likely Cause                                | What users see                                                | Immediate actions                                                                                | Primary owner                |
+| ----------------------------------- | ------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------- |
+| **Token/secret leak**               | Accidental commit or exposed CI logs.       | Subsequent unauthorized changes/deploys.                      | Invalidate in provider; rotate in 1Password; hunt for usage in audit logs; force redeploy clean. | Service owner + Web-Admins.  |
+| **Expired TLS/SSL certificate**     | Missed renewal or misconfigured auto-renew. | Browser warnings (“Connection not secure”), failed API calls. | Renew/redeploy certificate; validate chain; confirm monitoring alerts.                           | Infra + Build.               |
+| **Outage due to misconfigured DNS** | Incorrect DNS update or provider outage.    | Users can’t reach service; domain not resolving.              | Roll back DNS change; verify propagation; coordinate with DNS provider.                          | Infra + Build.               |
+| **Compromised admin account**       | Phishing or weak MFA.                       | Unauthorized changes in systems.                              | Disable account; rotate credentials; audit changes; notify security.                             | Security WG + Account owner. |
 
 ## Communications
 
