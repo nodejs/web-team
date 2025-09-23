@@ -8,7 +8,7 @@ For a list of covered services and repositories, refer to [PERMISSIONS.md](./PER
 
 ## IC & Escalation
 
-* **Incident Commander (IC):** Any `@nodejs/web-infra` member who first takes charge.
+* **Incident Commander (IC):** Any `@nodejs/web` member who first takes charge.
 
 **Escalation:**
  IC → `@nodejs/web-infra` → `@nodejs/web-admins` → `@nodejs/build` (Cloudflare account/zone-critical) and/or `@nodejs/security-wg` (security incidents) -> `@nodejs/tsc`.
