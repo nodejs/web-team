@@ -15,7 +15,7 @@ The Node.js Website Team is responsible for the day-to-day technical development
 
 The maintainers on the Node.js Website Team are responsible for steering the technical direction of the Node.js Website, and reserve the right to make final decisions on any issues or pull requests, in line with the Contribution Guidelines, Collaborator Guidelines, the Code of Conduct and the overall Governance premises of the Node.js project.
 
-Members of this team are nominated through the guidelines provided in the [Contributing Guidelines](https://github.com/nodejs/nodejs.org/blob/main/CONTRIBUTING.md#becoming-a-collaborator) within the [nodejs.org](https://github.com/nodejs/nodejs.org) repository. After a passed nomination, members should submit a PR to add themselves to the list of current members, shown below.
+Members of this team are nominated through the guidelines provided in the [Contributing Guidelines](https://github.com/nodejs/nodejs.org/blob/main/CONTRIBUTING.md#becoming-a-collaborator) within the [nodejs.org](https://github.com/nodejs/nodejs.org) repository. After a passed nomination, members should submit a PR to add themselves to the list of current members, shown within [MEMBERS.md](https://github.com/nodejs/web-team/blob/main/MEMBERS.md).
 
 ### Node.js Web Infra Team (`@nodejs/web-infra`)
 
@@ -27,7 +27,7 @@ The Node.js Web Infra Team is responsible for maintaining the Infrastructure rel
 
 Web Infra Team members should have access to be able to maintain the services mentioned above.
 
-Members of this team are nominated either by the Node.js Technical Steering Committee (TSC) or the Node.js Build WG and follow the guidelines provided in the Collaborator Guidelines of the Node.js Build WG. Note that members of the Node.js Web Team might also recommend people for nomination.
+Members of this team are nominated either by the Node.js Technical Steering Committee (TSC) or the Node.js Build WG and follow the guidelines provided in the Collaborator Guidelines of the Node.js Build WG. Current members of the Node.js Web Infra Team may also nominate individuals.
 
 \* This team has access to infrastructure providers directly related to the Website only, such as Vercel. Other providers that are shared beyond the Website may be controlled by other teams (for example, the Node.js Build WG owns Cloudflare).
 
@@ -37,7 +37,7 @@ The Node.js UX & Design Team is composed of Node.js Collaborators and External C
 
 Often members of this team will collaborate on providing best practices and guidelines for the Node.js Website, on matters of UX & Design. Members of this team are also responsible for providing feedback on the Node.js Website, and providing feedback on the Node.js Website's design. (For example, when a discussion arises regarding best practices on topics such as CSS, accessibility, UX flows and intent, or component design, the UX & Design Team has a say on the matter).
 
-Members of this team are nominated by the Node.js Technical Steering Committee (TSC). Note that members of the Node.js Web Team might also recommend people for nomination.
+Members of this team are nominated by the Node.js Technical Steering Committee (TSC). Current members of the UX & Design Team may also nominate individuals.
 
 ## The Interoperability of the Node.js Web Team
 
