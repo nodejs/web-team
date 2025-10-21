@@ -25,11 +25,16 @@ The Node.js Web Infra Team is responsible for maintaining the Infrastructure rel
 - Maintaining our Infrastructure Providers\*
 - Have technical ownership on best-standards and best-practices for our Web Infrastructure (such as Web Frameworks that we use)
 
-Web Infra Team members should have access to be able to maintain the services mentioned above.
+Web Infra Team members should have access to maintain the services mentioned above.
 
 Members of this team are nominated either by the Node.js Technical Steering Committee (TSC) or the Node.js Build WG and follow the guidelines provided in the Collaborator Guidelines of the Node.js Build WG. Current members of the Node.js Web Infra Team may also nominate individuals.
 
 \* This team has access to infrastructure providers directly related to the Website only, such as Vercel. Other providers that are shared beyond the Website may be controlled by other teams (for example, the Node.js Build WG owns Cloudflare).
+
+When considering new members, approvers are primarily concerned with **competence** and **trust**. The [language within the Build WG pertaining to competence and trust](https://github.com/nodejs/build/blob/main/GOVERNANCE.md#wg-membership) applies here. The following is repeated, for emphasis:
+
+> ![IMPORTANT]
+> Please be aware of the fact that the Web-Infra team is usually invisible to the Node.js project when things go well, but highly visible when things don't go well. Downtime of important resources can have a very wide impact, not just for Node.js open source contributors but for very large sections of the Node.js user ecosystem. Security breaches could have devastating consequences and these all reflect on the project.
 
 ### Node.js UX & Design Team (`@nodejs/ux-and-design`)
 
