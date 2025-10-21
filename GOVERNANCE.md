@@ -33,7 +33,7 @@ Members of this team are nominated either by the Node.js Technical Steering Comm
 
 When considering new members, approvers are primarily concerned with **competence** and **trust**. The [language within the Build WG pertaining to competence and trust](https://github.com/nodejs/build/blob/main/GOVERNANCE.md#wg-membership) applies here. The following is repeated, for emphasis:
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > Please be aware of the fact that the Web-Infra team is usually invisible to the Node.js project when things go well, but highly visible when things don't go well. Downtime of important resources can have a very wide impact, not just for Node.js open source contributors but for very large sections of the Node.js user ecosystem. Security breaches could have devastating consequences and these all reflect on the project.
 
 ### Node.js UX & Design Team (`@nodejs/ux-and-design`)
