@@ -16,7 +16,9 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
   - [ ] The nominee should enable physical or passkey 2FA on their Sentry account.
 - [ ] A Web Admin should invite the nominee to Node.js' Vercel account.
   - [ ] The nominee should enable physical or passkey 2FA on their Vercel account.
-- [ ] The nominee should open a pull request in [nodejs/email](https://github.com/nodejs/email) to add their email to the `nodejs-crowdin` email chain.
+- [ ] The **Nominee** should add their email to the following aliases (by opening a PR in [nodejs/email](https://github.com/nodejs/email))
+	- [ ] [`nodejs-crowdin`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L174)
+	- [ ] [`nodejs-vercel`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L241)
 - [ ] An OpenJS Slack Admin should add their Slack account to the `nodejs-website-team` team.
 
 ### Recommendations
