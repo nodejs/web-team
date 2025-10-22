@@ -21,7 +21,7 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
 ### Recommendations
 
 - [ ] The **Nominee** should have some form of physical 2FA (i.e. Yubikey) or passkey enabled on their GitHub account.
-- [ ] The **Nominee** should have a SSH or GPG key attached to their GitHub account have passphrases or be stored on a physical 2FA device.
+- [ ] The **Nominee** should have any SSH or GPG key attached to their GitHub account have passphrases or be stored on a physical 2FA device.
 - [ ] The **Nominee** should sign their Git commits.
 
 ## Notes
