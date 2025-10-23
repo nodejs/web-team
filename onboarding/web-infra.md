@@ -8,7 +8,7 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
 ## Tasks
 
 - [ ] Add the **Nominee** to the @nodejs/web-infra team on GitHub.
-- [ ] The nominee should open an issue in [nodejs/admin](https://github.com/nodejs/admin) requesting access to the Web Infra 1Password vault.
+- [ ] The **Nominee** should open an issue in [nodejs/admin](https://github.com/nodejs/admin) requesting access to the Web Infra 1Password vault.
 - [ ] Grant the **Nominee** access to Sentry.
   - [ ] The **Nominee** should enable physical or passkey 2FA on their Sentry account.
 - [ ] Grant the **Nominee** access to Vercel.
