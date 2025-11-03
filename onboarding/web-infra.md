@@ -13,11 +13,18 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
   - [ ] The **Nominee** should enable physical or passkey 2FA on their Sentry account.
 - [ ] Grant the **Nominee** access to Vercel.
   - [ ] The nominee should enable physical or passkey 2FA on their Vercel account.
-- [ ] The **Nominee** should add their email to the following aliases (by opening a PR in [nodejs/email](https://github.com/nodejs/email))
+- [ ] The **Nominee** should add their email to the following aliases (by opening a PR in [nodejs/email](https://github.com/nodejs/email)):
   - [ ] [`nodejs-crowdin`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L174)
   - [ ] [`nodejs-vercel`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L241)
-- [ ] Grant the **Nominee** access to Search Console
+- [ ] Grant the **Nominee** access to Search Console.
+- [ ] Grant the **Nominee** access to the Node.js Status Page.
 - [ ] An OpenJS Slack Admin should add their Slack account to the `nodejs-website-team` team.
+- [ ] Add the **Nominee** to the following OpenJS Slack channels:
+  - [ ] `#nodejs-website`
+  - [ ] `#nodejs-web-infra`
+  - [ ] `#nodejs-web-infra-alerts`
+  - [ ] `#ext-nodejs-cloudflare`
+  - [ ] `#ext-nodejs-sentry`
 
 ### Recommendations
 
