@@ -14,14 +14,15 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
 - [ ] Grant the **Nominee** access to Vercel.
   - [ ] The nominee should enable physical or passkey 2FA on their Vercel account.
 - [ ] The **Nominee** should add their email to the following aliases (by opening a PR in [nodejs/email](https://github.com/nodejs/email))
-	- [ ] [`nodejs-crowdin`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L174)
-	- [ ] [`nodejs-vercel`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L241)
+  - [ ] [`nodejs-crowdin`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L174)
+  - [ ] [`nodejs-vercel`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L241)
+- [ ] Grant the **Nominee** access to Search Console
 - [ ] An OpenJS Slack Admin should add their Slack account to the `nodejs-website-team` team.
 
 ### Recommendations
 
 - [ ] The **Nominee** should have some form of physical 2FA (i.e. Yubikey) or passkey enabled on their GitHub account.
-- [ ] The **Nominee** should have any SSH or GPG key attached to their GitHub account have passphrases or be stored on a physical 2FA device.
+- [ ] The **Nominee** should have any SSH or GPG key attached to their GitHub account have passphrases and/or be stored on a physical 2FA device.
 - [ ] The **Nominee** should sign their Git commits.
 
 ## Notes
