@@ -20,6 +20,7 @@
 
 ## Node.js Web Infra Team (`@nodejs/web-infra`)
 
+- [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** (he/him)
 - [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him)
 - [@canerakdas](https://github.com/canerakdas) - **Caner Akdas**
 - [@flakey5](https://github.com/flakey5) - **flakey5** (he/him)
