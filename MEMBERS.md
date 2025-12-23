@@ -13,7 +13,6 @@
 - [@canerakdas](https://github.com/canerakdas) - **Caner Akdas**
 - [@dario-piotrowicz](https://github.com/dario-piotrowicz) - **Dario Piotrowicz**
 - [@Harkunwar](https://github.com/Harkunwar) - **Harkunwar Kochar** (he/him)
-- [@HinataKah0](https://github.com/HinataKah0) - **HinataKah0** (he/him)
 - [@manishprivet](https://github.com/manishprivet) - **Manish Kumar** (he/him)
 - [@mikeesto](https://github.com/mikeesto) - **Michael Esteban** (he/him)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
