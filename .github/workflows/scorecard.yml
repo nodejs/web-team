@@ -16,9 +16,6 @@ on:
       - main
   workflow_call:
 
-# Declare default permissions as read only.
-permissions: read-all
-
 jobs:
   analysis:
     name: Scorecard analysis
