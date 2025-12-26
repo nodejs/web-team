@@ -16,6 +16,7 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
 - [ ] The **Nominee** should add their email to the following aliases (by opening a PR in [nodejs/email](https://github.com/nodejs/email)):
   - [ ] [`nodejs-crowdin`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L174)
   - [ ] [`nodejs-vercel`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L241)
+- [ ] Grant the **Nominee** access to Crowdin.
 - [ ] Grant the **Nominee** access to Search Console.
 - [ ] Grant the **Nominee** access to the Node.js Status Page.
 - [ ] An OpenJS Slack Admin should add their Slack account to the `nodejs-website-team` team.
