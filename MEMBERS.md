@@ -25,8 +25,3 @@
 - [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** (he/him)
 - [@MoLow](https://github.com/MoLow) - **Moshe Atlow** (he/him)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
-
-## Node.js UX & Design Team (`@nodejs/ux-and-design`)
-
-- [@kyliewd](https://github.com/kyliewd) - **Kylie Wagar-Dirks** (she/her)
-- [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
