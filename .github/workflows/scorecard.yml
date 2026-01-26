@@ -16,13 +16,13 @@ on:
       - main
   workflow_call:
 
-# Declare default permissions as read only.
-permissions: read-all
+permissions: {}
 
 jobs:
   analysis:
     name: Scorecard analysis
     runs-on: ubuntu-latest
+
     permissions:
       # Needed to upload the results to code-scanning dashboard.
       security-events: write
