@@ -36,6 +36,24 @@ When considering new members, approvers are primarily concerned with **competenc
 > [!IMPORTANT]
 > Please be aware of the fact that the Web-Infra team is usually invisible to the Node.js project when things go well, but highly visible when things don't go well. Downtime of important resources can have a very wide impact, not just for Node.js open source contributors but for very large sections of the Node.js user ecosystem. Security breaches could have devastating consequences and these all reflect on the project.
 
+#### Onboarding Trial Period
+
+New members of the Web Infra Team undergo an initial **trial period** with limited access to infrastructure systems. During this period, new members receive reduced permissions sufficient for day-to-day monitoring and troubleshooting, but not full administrative access. Specifically:
+
+- **Vercel**: New members are granted the **Viewer** role (instead of the standard **Developer** role). This provides sufficient access to view deployments, check logs, and monitor projects.
+- **Cloudflare**: New members receive **Read-only** access (which is the standard level for all Web Infra members, as access is controlled by @nodejs/build).
+- **Other Services**: Access to other services (Sentry, Crowdin, Search Console, Status Page, 1Password) is granted as normal during the trial period.
+
+The trial period lasts a **minimum of 3 months** from the date the member is onboarded. After this period, existing Web Infra members may approve elevating the new member's permissions to full access levels. The elevation requires approval from at least **two existing Web Infra members** (or one Web Admin). If concerns arise during the trial period, the team may extend the trial or revoke access as necessary.
+
+During the trial period, new members are encouraged to:
+
+- Familiarize themselves with the infrastructure and its documentation
+- Participate in incident response under the guidance of experienced members
+- Demonstrate competence in handling day-to-day operational tasks
+
+For the detailed onboarding checklist, see [onboarding/web-infra.md](onboarding/web-infra.md).
+
 ### Node.js UX & Design Team (`@nodejs/ux-and-design`)
 
 The Node.js UX & Design Team is composed of Node.js Collaborators and External Collaborators that have experience or expertisè with UX & Design. The UX & Design Team is responsible for guiding and serving as points of contact when members of the Node.js Web Team require assistance or guidance regarding UX & Design.
