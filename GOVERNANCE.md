@@ -29,6 +29,21 @@ Web Infra Team members should have access to maintain the services mentioned abo
 
 Members of this team are nominated either by the Node.js Technical Steering Committee (TSC) or the Node.js Build WG and follow the guidelines provided in the Collaborator Guidelines of the Node.js Build WG. Current members of the Node.js Web Infra Team may also nominate individuals.
 
+#### Trial Period for New Members
+
+Upon acceptance, new members of the Web Infra Team enter a **trial period of 3 months** with limited access to infrastructure services. The purpose of this trial period is to ensure new members can demonstrate competence and trustworthiness in managing critical infrastructure before being granted elevated privileges.
+
+During the trial period, new members receive the following reduced permissions:
+
+- **Cloudflare**: Read-only access (day-to-day operations generally do not require manual changes)
+- **Vercel**: Viewer-level access (sufficient to review deployments, check logs, and monitor project status)
+- **Sentry, Crowdin, Atlassian Statuspage**: Read-only or limited access
+- **1Password**: Access is not granted during the trial period; credentials may be shared on a case-by-case basis by an existing member for specific tasks
+
+New members should use the trial period to familiarize themselves with the team's infrastructure, processes, and incident response procedures. Existing team members are expected to actively mentor and support new members throughout this period.
+
+At the end of the trial period, existing Web Infra Team members will assess the new member's readiness for full access, based on demonstrated competence and trust. Full access may be granted earlier by consensus of existing team members if the member demonstrates exceptional competence and trustworthiness. Conversely, the trial period may be extended if the team determines that additional time is needed.
+
 \* This team has access to infrastructure providers directly related to the Website only, such as Vercel. Other providers that are shared beyond the Website may be controlled by other teams (for example, the Node.js Build WG owns Cloudflare).
 
 When considering new members, approvers are primarily concerned with **competence** and **trust**. The [language within the Build WG pertaining to competence and trust](https://github.com/nodejs/build/blob/main/GOVERNANCE.md#wg-membership) applies here. The following is repeated, for emphasis:
