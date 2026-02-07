@@ -29,6 +29,23 @@
 | **[Sentry][]**               | -                                  | -           | -                      | Admin             | Admin              |                                                                                                                                                                        |
 | **[Vercel][]**               | -                                  | -           | -                      | Developer         | Owner              | Along with individual access, credentials for a user with elevated exist in 1Password.                                                                                 |
 
+### Trial Period Permissions for New Web Infra Members
+
+As outlined in [GOVERNANCE.md](GOVERNANCE.md), new members of the @nodejs/web-infra team undergo a **3-month trial period** with reduced permissions before receiving full access. The table below shows the access levels granted during the trial period compared to the full access levels shown above.
+
+| Service                      | Trial Period Access | Full Access (post-trial) | Notes                                                                                              |
+| ---------------------------- | ------------------- | ------------------------ | -------------------------------------------------------------------------------------------------- |
+| **[1Password][]**            | -                   | Admin                    | Not granted during trial; credentials shared on a case-by-case basis by an existing member.        |
+| **[Atlassian Statuspage][]** | Read                | App Admin                | Public status page is accessible to everyone; management access is granted after trial.             |
+| **[Chromatic][]**            | Read                | Admin                    | Read access available via GitHub authentication.                                                   |
+| **[Cloudflare][]**           | Read                | Read                     | Read-only access is sufficient for day-to-day; elevated access may be granted on a case-by-case basis post-trial. |
+| **[Crowdin][]**              | Read                | Admin                    | Read access to review translations; admin access after trial.                                      |
+| **[Sentry][]**               | Read                | Admin                    | Read access to view error reports and logs; admin access after trial.                               |
+| **[Vercel][]**               | Viewer              | Developer                | Viewer access allows reviewing deployments and checking logs; Developer access after trial.         |
+
+> [!NOTE]
+> GitHub repository permissions are **not** affected by the trial period. New members receive the same repository-level access as all @nodejs/web-infra members from day one.
+
 ## Access Tokens & Automations
 
 | Secret Name                | Display Name            | Platform(s) / Location(s)                                              | Associated Project(s)                     | Access Level | Expiry | Notes                                       |
