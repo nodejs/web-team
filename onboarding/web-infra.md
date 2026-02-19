@@ -7,11 +7,11 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
 
 ## Tasks
 
-- [ ] Add the **Nominee** to the @nodejs/web-infra team on GitHub.
+- [ ] Add the **Nominee** to the [`@nodejs/web-infra`](https://github.com/orgs/nodejs/teams/web-infra) team on GitHub.
 - [ ] The **Nominee** should open an issue in [nodejs/admin](https://github.com/nodejs/admin) requesting access to the Web Infra 1Password vault.
 - [ ] Grant the **Nominee** access to Sentry.
   - [ ] The **Nominee** should enable physical or passkey 2FA on their Sentry account.
-- [ ] Grant the **Nominee** access to Vercel.
+- [ ] The **Nominee** should open an issue in [openjs-foundation/infrastructure](https://github.com/openjs-foundation/infrastructure) requesting `Nodejs Developer Access Group` access in Vercel.
   - [ ] The nominee should enable physical or passkey 2FA on their Vercel account.
 - [ ] The **Nominee** should add their email to the following aliases (by opening a PR in [nodejs/email](https://github.com/nodejs/email)):
   - [ ] [`nodejs-crowdin`](https://github.com/nodejs/email/blob/main/iojs.org/aliases.json#L174)

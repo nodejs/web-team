@@ -26,3 +26,9 @@
 - [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** (he/him)
 - [@MoLow](https://github.com/MoLow) - **Moshe Atlow** (he/him)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
+
+## Node.js Web Admins Team (`@nodejs/web-admins`)
+
+- [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him)
+- [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** (he/him)
+- [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
