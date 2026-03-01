@@ -4,7 +4,6 @@ on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
-  workflow_call:
 
 permissions:
   pull-requests: write
@@ -12,134 +11,9 @@ permissions:
 
 jobs:
   auto-merge:
+    if: github.repository == 'nodejs/web-team'
     runs-on: ubuntu-latest
     
     steps:
-      - name: Check and merge eligible PRs
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-            
-            // Get the default branch
-            const { data: repository } = await github.rest.repos.get({ owner, repo });
-            const defaultBranch = repository.default_branch;
-            
-            core.info(`Checking PRs against ${owner}/${repo}:${defaultBranch}`);
-            
-            // Get all open PRs against the default branch
-            const { data: pullRequests } = await github.rest.pulls.list({
-              owner,
-              repo,
-              state: 'open',
-              base: defaultBranch,
-              per_page: 100
-            });
-            
-            core.info(`Found ${pullRequests.length} open PRs`);
-            
-            // Process each PR
-            for (const pr of pullRequests) {
-              core.startGroup(`PR #${pr.number} (${pr.html_url}): ${pr.title}`);
-              
-              try {
-                // Check if PR has 'auto-merge' label
-                const hasAutoMergeLabel = pr.labels.some(label => label.name === 'auto-merge');
-                if (!hasAutoMergeLabel) {
-                  core.info(`❌ Missing 'auto-merge' label`);
-                  continue;
-                }
-                core.info(`✅ Has 'auto-merge' label`);
-                
-                // Check if PR has been open for at least 2 days
-                const createdAt = new Date(pr.created_at);
-                const now = new Date();
-                const daysSinceCreation = (now - createdAt) / (1000 * 60 * 60 * 24);
-                
-                if (daysSinceCreation < 2) {
-                  core.info(`❌ PR opened ${daysSinceCreation.toFixed(2)} days ago (needs 2+ days)`);
-                  continue;
-                }
-                core.info(`✅ PR opened ${daysSinceCreation.toFixed(2)} days ago`);
-                
-                // Get the most recent commit
-                const { data: commits } = await github.rest.pulls.listCommits({
-                  owner,
-                  repo,
-                  pull_number: pr.number,
-                  per_page: 100
-                });
-                
-                if (commits.length === 0) {
-                  core.info(`❌ No commits found`);
-                  continue;
-                }
-                
-                const latestCommit = commits[commits.length - 1];
-                const latestCommitDate = new Date(latestCommit.commit.committer.date);
-                core.info(`Latest commit: ${latestCommit.sha.substring(0, 7)} at ${latestCommitDate.toISOString()}`);
-                
-                // Get reviews for this PR
-                const { data: reviews } = await github.rest.pulls.listReviews({
-                  owner,
-                  repo,
-                  pull_number: pr.number,
-                  per_page: 100
-                });
-                
-                const latestApproval = reviews
-                  .filter(review => review.state === 'APPROVED')
-                  .sort((a, b) => new Date(b.submitted_at) - new Date(a.submitted_at))[0];
-                
-                if (!latestApproval) {
-                  core.info(`❌ No approvals found`);
-                  continue;
-                }
-
-                const latestApprovalDate = new Date(latestApproval.submitted_at);
-                core.info(`Latest approval: ${latestApproval.user.login} at ${latestApprovalDate.toISOString()}`);
-                
-                if (latestApprovalDate < latestCommitDate) {
-                  core.info(`❌ Latest approval is older than the latest commit`);
-                  continue;
-                }
-                core.info(`✅ Has valid approval after latest commit`);
-                
-                // Check if PR is mergeable
-                // We need to fetch the PR again to get the mergeable state
-                const { data: prDetails } = await github.rest.pulls.get({
-                  owner,
-                  repo,
-                  pull_number: pr.number
-                });
-                
-                if (prDetails.mergeable === false) {
-                  core.info(`❌ PR has merge conflicts`);
-                  continue;
-                }
-                
-                if (prDetails.mergeable_state === 'blocked') {
-                  core.info(`❌ PR is blocked (required checks may not have passed)`);
-                  continue;
-                }
-                
-                core.info(`✅ PR is mergeable (state: ${prDetails.mergeable_state})`);
-                
-                // All conditions met - merge the PR
-                try {
-                  await github.rest.pulls.merge({
-                    owner,
-                    repo,
-                    pull_number: pr.number,
-                    merge_method: 'squash'
-                  });
-                  core.notice(`🚀 Successfully merged PR #${pr.number} (${pr.html_url})`);
-                } catch (error) {
-                  core.error(`❌ Failed to merge PR #${pr.number} (${pr.html_url}): ${error.message}`);
-                }
-              } finally {
-                core.endGroup();
-              }
-            }
-            
-            core.info('Auto-merge check complete');
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: ./actions/auto-merge-prs
