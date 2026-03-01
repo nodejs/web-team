@@ -24,22 +24,13 @@ runs:
   steps:
     - name: Check and merge eligible PRs
       uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
-      env:
-        LABEL_NAME: ${{ inputs.label-name }}
-        HOURS_OPEN: ${{ inputs.hours-open }}
-        MERGE_METHOD: ${{ inputs.merge-method }}
       with:
         github-token: ${{ inputs.github-token }}
         script: |
           const { owner, repo } = context.repo;
-          const labelName = process.env.LABEL_NAME;
-          const hoursOpen = parseFloat(process.env.HOURS_OPEN);
-          const mergeMethod = process.env.MERGE_METHOD;
-          
-          core.info(`Checking PRs for ${owner}/${repo}`);
-          core.info(`Required label: "${labelName}"`);
-          core.info(`Required hours open: ${hoursOpen}`);
-          core.info(`Merge method: ${mergeMethod}`);
+          const labelName = core.getInput('label-name');
+          const hoursOpen = parseFloat(core.getInput('hours-open'));
+          const mergeMethod = core.getInput('merge-method');
           
           // Get all open PRs (with pagination)
           const pullRequests = await github.paginate(github.rest.pulls.list, {
@@ -48,8 +39,7 @@ runs:
             state: 'open',
             per_page: 100
           });
-          
-          core.info(`Found ${pullRequests.length} open PRs`);
+          core.info(`Found ${pullRequests.length} open PRs for ${owner}/${repo}`);
           
           // Process each PR
           for (const pr of pullRequests) {
