@@ -108,7 +108,11 @@ runs:
                 if (mergeMethod === 'queue') {
                   await github.graphql(`
                     mutation($id: ID!) {
-                      enqueuePullRequest(input: { pullRequestId: $id })
+                      enqueuePullRequest(input: { pullRequestId: $id }) {
+                        mergeQueueEntry {
+                          id
+                        }
+                      }
                     }
                   `, { id: pr.node_id });
                 } else {
