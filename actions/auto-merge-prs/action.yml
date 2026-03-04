@@ -2,6 +2,9 @@ name: Auto-merge PRs
 description: Automatically merge pull requests that meet specified criteria
 
 inputs:
+  merge-method:
+    description: 'Merge method to use (merge, squash, rebase, or queue).'
+    required: true
   label-name:
     description: 'The label name that PRs must have to be eligible for auto-merge'
     required: false
@@ -10,10 +13,6 @@ inputs:
     description: 'Number of hours a PR must be open before it can be auto-merged'
     required: false
     default: '48'
-  merge-method:
-    description: 'Merge method to use (merge, squash, or rebase)'
-    required: false
-    default: 'squash'
   github-token:
     description: 'GitHub token for authentication'
     required: false
@@ -25,16 +24,16 @@ runs:
     - name: Check and merge eligible PRs
       uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
       env:
+        INPUT_MERGE_METHOD: ${{ inputs.merge-method }}
         INPUT_LABEL_NAME: ${{ inputs.label-name }}
         INPUT_HOURS_OPEN: ${{ inputs.hours-open }}
-        INPUT_MERGE_METHOD: ${{ inputs.merge-method }}
       with:
         github-token: ${{ inputs.github-token }}
         script: |
           const { owner, repo } = context.repo;
+          const mergeMethod = process.env.INPUT_MERGE_METHOD;
           const labelName = process.env.INPUT_LABEL_NAME;
           const hoursOpen = parseFloat(process.env.INPUT_HOURS_OPEN);
-          const mergeMethod = process.env.INPUT_MERGE_METHOD;
           
           // Get all open PRs (with pagination)
           const pullRequests = await github.paginate(github.rest.pulls.list, {
@@ -106,15 +105,23 @@ runs:
               
               // All conditions met - merge the PR
               try {
-                await github.rest.pulls.merge({
-                  owner,
-                  repo,
-                  pull_number: pr.number,
-                  merge_method: mergeMethod
-                });
-                core.notice(`🚀 Successfully merged PR #${pr.number} (${pr.html_url}): ${pr.title}`);
+                if (mergeMethod === 'queue') {
+                  await github.graphql(`
+                    mutation($id: ID!) {
+                      enqueuePullRequest(input: { pullRequestId: $id })
+                    }
+                  `, { id: pr.node_id });
+                } else {
+                  await github.rest.pulls.merge({
+                    owner,
+                    repo,
+                    pull_number: pr.number,
+                    merge_method: mergeMethod,
+                  });
+                }
+                core.notice(`🚀 Successfully ${mergeMethod === 'queue' ? 'queued' : 'merged'} PR #${pr.number} (${pr.html_url}): ${pr.title}`);
               } catch (error) {
-                core.error(`❌ Failed to merge PR #${pr.number} (${pr.html_url}): ${error.message}`);
+                core.error(`❌ Failed to ${mergeMethod === 'queue' ? 'queue' : 'merge'} PR #${pr.number} (${pr.html_url}): ${error.message}`);
               }
             } finally {
               core.endGroup();
