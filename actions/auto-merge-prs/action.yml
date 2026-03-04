@@ -1,0 +1,120 @@
+name: Auto-merge PRs
+description: Automatically merge pull requests that meet specified criteria
+
+inputs:
+  label-name:
+    description: 'The label name that PRs must have to be eligible for auto-merge'
+    required: false
+    default: 'auto-merge'
+  hours-open:
+    description: 'Number of hours a PR must be open before it can be auto-merged'
+    required: false
+    default: '48'
+  merge-method:
+    description: 'Merge method to use (merge, squash, or rebase)'
+    required: false
+    default: 'squash'
+  github-token:
+    description: 'GitHub token for authentication'
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: composite
+  steps:
+    - name: Check and merge eligible PRs
+      uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+      with:
+        github-token: ${{ inputs.github-token }}
+        script: |
+          const { owner, repo } = context.repo;
+          const labelName = core.getInput('label-name');
+          const hoursOpen = parseFloat(core.getInput('hours-open'));
+          const mergeMethod = core.getInput('merge-method');
+          
+          // Get all open PRs (with pagination)
+          const pullRequests = await github.paginate(github.rest.pulls.list, {
+            owner,
+            repo,
+            state: 'open',
+            per_page: 100
+          });
+          core.info(`Found ${pullRequests.length} open PRs for ${owner}/${repo}`);
+          
+          // Process each PR
+          for (const pr of pullRequests) {
+            core.startGroup(`PR #${pr.number} (${pr.html_url}): ${pr.title}`);
+            
+            try {
+              // Check if PR is from the same repository (not a fork)
+              if (pr.head.repo.full_name !== `${owner}/${repo}`) {
+                core.info(`❌ PR is from a fork (${pr.head.repo.full_name})`);
+                continue;
+              }
+              core.info(`✅ PR is from the base repository`);
+
+              // Skip draft PRs
+              if (pr.draft) {
+                core.info(`❌ PR is a draft`);
+                continue;
+              }
+              core.info(`✅ PR is ready for review`);
+              
+              // Check if PR has the required label
+              const hasRequiredLabel = pr.labels.some(label => label.name === labelName);
+              if (!hasRequiredLabel) {
+                core.info(`❌ PR is missing '${labelName}' label`);
+                continue;
+              }
+              core.info(`✅ PR has '${labelName}' label`);
+              
+              // Check if PR has been open for at least the required number of hours
+              const createdAt = new Date(pr.created_at);
+              const now = new Date();
+              const hoursSinceCreation = (now - createdAt) / (1000 * 60 * 60);
+              
+              if (hoursSinceCreation < hoursOpen) {
+                core.info(`❌ PR opened ${hoursSinceCreation.toFixed(2)} hours ago (needs ${hoursOpen}+ hours)`);
+                continue;
+              }
+              core.info(`✅ PR opened ${hoursSinceCreation.toFixed(2)} hours ago`);
+
+              // Check if the PR has a known valid merge commit SHA
+              if (!pr.merge_commit_sha) {
+                core.info(`❌ PR does not have a merge commit SHA (not mergeable)`);
+                continue;
+              }
+              core.info(`✅ PR has a merge commit SHA (${pr.merge_commit_sha})`);
+              
+              // Get full PR details to check mergeability
+              const { data: prDetails } = await github.rest.pulls.get({
+                owner,
+                repo,
+                pull_number: pr.number
+              });
+              
+              // Check for clean mergeable_state (indicates all checks and requirements are met)
+              if (prDetails.mergeable_state !== 'clean') {
+                core.info(`❌ PR mergeable_state is '${prDetails.mergeable_state}' (not clean)`);
+                continue;
+              }
+              core.info(`✅ PR is mergeable (${prDetails.mergeable_state})`);
+              
+              // All conditions met - merge the PR
+              try {
+                await github.rest.pulls.merge({
+                  owner,
+                  repo,
+                  pull_number: pr.number,
+                  merge_method: mergeMethod
+                });
+                core.notice(`🚀 Successfully merged PR #${pr.number} (${pr.html_url}): ${pr.title}`);
+              } catch (error) {
+                core.error(`❌ Failed to merge PR #${pr.number} (${pr.html_url}): ${error.message}`);
+              }
+            } finally {
+              core.endGroup();
+            }
+          }
+          
+          core.info('Auto-merge check complete');
