@@ -6,5 +6,9 @@ updates:
       - /actions/*
     schedule:
       interval: "monthly"
+    labels:
+      - "dependencies"
+      - "github_actions"
+      - "auto-merge"
     cooldown:
       default-days: 3
