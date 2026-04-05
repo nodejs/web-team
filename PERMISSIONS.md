@@ -6,6 +6,7 @@
 | ---------------------------------------- | -------- | ----------- | ---------------------- | ----------------- | ------------------ | ------------------------------ |
 | **[nodejs/discord-status-worker][]**     | Read     | -           | -                      | Maintain          | Admin              |                                |
 | **[nodejs/doc-kit][]**                   | Read     | -           | Write                  | Maintain          | Admin              |                                |
+| **[nodejs/learn][]**                     | Read     | -           | Write                  | Maintain          | Admin              |                                |
 | **[nodejs/node.js.org][]**               | Read     | Write       | -                      | Maintain          | Admin              |                                |
 | **[nodejs/nodejs.dev][]**                | Read     | -           | Write                  | Maintain          | Admin              | This repository is _archived_. |
 | **[nodejs/nodejs.org][]**                | Read     | -           | Write                  | Maintain          | Admin              |                                |
@@ -50,6 +51,7 @@
 [HackMD]: https://hackmd.io
 [nodejs/discord-status-worker]: https://github.com/nodejs/discord-status-worker
 [nodejs/doc-kit]: https://github.com/nodejs/doc-kit
+[nodejs/learn]: https://github.com/nodejs/learn
 [nodejs/node.js.org]: https://github.com/nodejs/node.js.org
 [nodejs/nodejs.dev]: https://github.com/nodejs/nodejs.dev
 [nodejs/nodejs.org]: https://github.com/nodejs/nodejs.org
