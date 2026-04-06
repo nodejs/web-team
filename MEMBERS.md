@@ -24,7 +24,7 @@
 - [@canerakdas](https://github.com/canerakdas) - **Caner Akdas** (he/him) (canerakdas@gmail.com)
 - [@flakey5](https://github.com/flakey5) - **flakey5** (he/him) (f.flakey5@gmail.com)
 - [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** (he/him) (me@mattcowley.co.uk)
-- [@MoLow](https://github.com/MoLow) - **Moshe Atlow** (he/him)
+- [@MoLow](https://github.com/MoLow) - **Moshe Atlow** (he/him) (moshe@atlow.co.il)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them) (cwunder@gnome.org)
 
 ## Node.js Web Admins Team (`@nodejs/web-admins`)
