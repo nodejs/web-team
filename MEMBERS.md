@@ -19,13 +19,13 @@
 
 ## Node.js Web Infra Team (`@nodejs/web-infra`)
 
-- [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** (he/him)
-- [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him)
-- [@canerakdas](https://github.com/canerakdas) - **Caner Akdas**
-- [@flakey5](https://github.com/flakey5) - **flakey5** (he/him)
-- [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** (he/him)
+- [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** (he/him) (me@aviv.sh)
+- [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him) (brian.muenzenmeyer@gmail.com)
+- [@canerakdas](https://github.com/canerakdas) - **Caner Akdas** (he/him) (canerakdas@gmail.com)
+- [@flakey5](https://github.com/flakey5) - **flakey5** (he/him) (f.flakey5@gmail.com)
+- [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** (he/him) (me@mattcowley.co.uk)
 - [@MoLow](https://github.com/MoLow) - **Moshe Atlow** (he/him)
-- [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
+- [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them) (cwunder@gnome.org)
 
 ## Node.js Web Admins Team (`@nodejs/web-admins`)
 
