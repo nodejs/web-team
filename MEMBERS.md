@@ -19,13 +19,13 @@
 
 ## Node.js Web Infra Team (`@nodejs/web-infra`)
 
-- [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** (he/him) (me@aviv.sh)
-- [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him) (brian.muenzenmeyer@gmail.com)
-- [@canerakdas](https://github.com/canerakdas) - **Caner Akdas** (he/him) (canerakdas@gmail.com)
-- [@flakey5](https://github.com/flakey5) - **flakey5** (he/him) (me@flakey5.dev)
-- [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** (he/him) (me@mattcowley.co.uk)
-- [@MoLow](https://github.com/MoLow) - **Moshe Atlow** (he/him) (moshe@atlow.co.il)
-- [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them) (cwunder@gnome.org)
+- [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** <<me@aviv.sh>> (he/him)
+- [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** <<brian.muenzenmeyer@gmail.com>> (he/him)
+- [@canerakdas](https://github.com/canerakdas) - **Caner Akdas** <<canerakdas@gmail.com>> (he/him)
+- [@flakey5](https://github.com/flakey5) - **flakey5** <<me@flakey5.dev>> (he/him)
+- [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** <<me@mattcowley.co.uk>> (he/him)
+- [@MoLow](https://github.com/MoLow) - **Moshe Atlow** <<moshe@atlow.co.il>> (he/him)
+- [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** <<cwunder@gnome.org>> (they/them)
 
 ## Node.js Web Admins Team (`@nodejs/web-admins`)
 
