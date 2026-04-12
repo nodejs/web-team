@@ -32,12 +32,13 @@
 
 ## Access Tokens & Automations
 
-| Secret Name                | Display Name            | Platform(s) / Location(s)                                              | Associated Project(s)                     | Access Level | Expiry | Notes                                       |
-| -------------------------- | ----------------------- | ---------------------------------------------------------------------- | ----------------------------------------- | ------------ | ------ | ------------------------------------------- |
-| `CF_API_TOKEN`             | N/A                     | [nodejs/discord-status-worker][], [nodejs/release-cloudflare-worker][] | [Cloudflare][]                            | Write        | -      | Used for deploying to Cloudflare Workers    |
-| `CROWDIN_GITHUB_BOT_TOKEN` | **[@nodejs-crowdin][]** | [nodejs/nodejs.org][]                                                  | [nodejs/nodejs.org][]                     | Write        | -      | Used for localization workflows via Crowdin |
-| N/A                        | **[@openjs-vercel][]**  | Vercel                                                                 | [nodejs/nodejs.org][], [nodejs/doc-kit][] | Admin        | -      | Used for deployments                        |
-| `CLOUDFLARE_API_TOKEN`     | N/A                     | [nodejs/nodejs.org][]                                                  | [Cloudflare][]                            | Write        | -      | Used for deploying Cloudflare Workers       |
+| Secret Name                  | Display Name            | Platform(s) / Location(s)                                              | Associated Project(s)                     | Access Level   | Expiry | Notes                                       |
+| ---------------------------- | ----------------------- | ---------------------------------------------------------------------- | ----------------------------------------- | -------------- | ------ | ------------------------------------------- |
+| `CF_API_TOKEN`               | N/A                     | [nodejs/discord-status-worker][], [nodejs/release-cloudflare-worker][] | [Cloudflare][]                            | Write          | -      | Used for deploying to Cloudflare Workers    |
+| `CROWDIN_GITHUB_BOT_TOKEN`   | **[@nodejs-crowdin][]** | [nodejs/nodejs.org][]                                                  | [nodejs/nodejs.org][]                     | Write          | -      | Used for localization workflows via Crowdin |
+| N/A                          | **[@openjs-vercel][]**  | Vercel                                                                 | [nodejs/nodejs.org][], [nodejs/doc-kit][] | Admin          | -      | Used for deployments                        |
+| `NEXT_GITHUB_READ_API_TOKEN` | **[@openjs-vercel][]**  | Vercel (Production-only)                                               | [nodejs/nodejs.org][]                     | Read (private) | -      | Used for fetching GitHub sponsors           |
+| `CLOUDFLARE_API_TOKEN`       | N/A                     | [nodejs/nodejs.org][]                                                  | [Cloudflare][]                            | Write          | -      | Used for deploying Cloudflare Workers       |
 
 [1Password]: https://1password.com/
 [@nodejs-crowdin]: https://github.com/nodejs-crowdin
