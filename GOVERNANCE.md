@@ -36,6 +36,22 @@ When considering new members, approvers are primarily concerned with **competenc
 > [!IMPORTANT]
 > Please be aware of the fact that the Web-Infra team is usually invisible to the Node.js project when things go well, but highly visible when things don't go well. Downtime of important resources can have a very wide impact, not just for Node.js open source contributors but for very large sections of the Node.js user ecosystem. Security breaches could have devastating consequences and these all reflect on the project.
 
+## Pull Request Policies
+
+### Atomic Pull Requests
+
+Each pull request should contain a single, atomic, and logical change. This makes it easier to isolate breakages and simplifies the review process for maintainers. Additionally, this policy ensures that, in the event of a regression, the offending change can easily be singled out and reverted.
+
+### Fast-Track Policy
+
+Pull requests may be fast-tracked (landed before the typical review period) when the change is urgent or trivial. Fast-track landing requires the following approvals:
+
+- At least one approval from a team member who is **not** the PR author **and not** the person who requested fast-track.
+
+In other words, if someone other than the author requests fast-track on a PR, their approval alone is not sufficient — an additional approval from a third team member is required.
+
+In the event that a PR is an urgent change (for instance, a revert of a production-breaking change), members of the Node.js Web Team may, at their discretion, waive or modify this requirement.
+
 ## The Interoperability of the Node.js Web Team
 
 As seen above, the different teams under the Node.js Web Team umbrella are responsible for having the oversight on different aspects of Node.js's Web-related projects. However, it is important to note that the Node.js Web Team is not a set of siloed teams, but rather a set of teams that work together to achieve the same goal: Providing the best Web Experience for Node.js.
