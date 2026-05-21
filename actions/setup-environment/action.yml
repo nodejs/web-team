@@ -45,6 +45,7 @@ runs:
     - name: Checkout repository
       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       with:
+        persist-credentials: false
         ref: ${{ inputs.ref }}
         fetch-depth: ${{ inputs.fetch-depth }}
         token: ${{ inputs.token }}
@@ -72,9 +73,9 @@ runs:
     - name: Install dependencies with pnpm
       if: inputs.pnpm == 'true'
       shell: bash
-      run: pnpm install --frozen-lockfile ${{ inputs.install-flags }}
+      run: pnpm install --frozen-lockfile ${{ inputs.install-flags }} # zizmor: ignore[template-injection] intentional
 
     - name: Install dependencies with npm
       if: inputs.pnpm != 'true'
       shell: bash
-      run: npm ci ${{ inputs.install-flags }}
+      run: npm ci ${{ inputs.install-flags }} # zizmor: ignore[template-injection] intentional
