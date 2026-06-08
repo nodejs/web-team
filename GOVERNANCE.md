@@ -44,7 +44,7 @@ Each pull request should contain a single, atomic, and logical change. This make
 
 ### Fast-Track Policy
 
-Pull requests may be fast-tracked (landed before the typical review period) when the change is urgent or trivial. Fast-track landing requires the following approvals:
+Pull requests may be fast-tracked (landed before the typical review period) when the change is urgent or time-sensitive. Fast-track landing requires the following approvals:
 
 - At least one approval from a team member who is **not** the PR author **and not** the person who requested fast-track.
 
