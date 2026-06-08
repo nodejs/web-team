@@ -50,7 +50,7 @@ Pull requests may be fast-tracked (landed before the typical review period) when
 
 In other words, if someone other than the author requests fast-track on a PR, their approval alone is not sufficient — an additional approval from a third team member is required.
 
-In the event that a PR is an urgent change (for instance, a revert of a production-breaking change), members of the Node.js Web Team may, at their discretion, waive or modify this requirement.
+While there are special exceptions that require bypassing this policy, all unorthodox merges should have proper justification in writing in GitHub and/or Slack.
 
 ## The Interoperability of the Node.js Web Team
 
