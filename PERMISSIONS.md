@@ -12,8 +12,9 @@
 | **[nodejs/nodejs.org][]**                | Read     | -           | Write                  | Maintain          | Admin              |                                |
 | **[nodejs/nodejs.org-archive][]**        | Read     | Write       | -                      | Maintain          | Admin              | This repository is _archived_. |
 | **[nodejs/release-cloudflare-worker][]** | Read     | -           | -                      | Maintain          | Admin              |                                |
-| **[nodejs/web-team][]**                  | Read     | Triage      | Maintain               | -                 | -                  |                                |
+| **[nodejs/web-team][]**                  | Read     | Triage      | -                      | -                 | Admin              |                                |
 | **[nodejs/website-cloudflare-worker][]** | -        | -           | -                      | Maintain          | Admin              |                                |
+| **[nodejs/undici-website][]**          | Read       | -           | -                      | Maintain          | -                  |                                |
 
 ## External Services
 
@@ -60,5 +61,6 @@
 [nodejs/release-cloudflare-worker]: https://github.com/nodejs/release-cloudflare-worker
 [nodejs/web-team]: https://github.com/nodejs/web-team
 [nodejs/website-cloudflare-worker]: https://github.com/nodejs/website-cloudflare-worker
+[nodejs/undici-website]: https://github.com/nodejs/undici-website
 [Sentry]: https://sentry.io/
 [Vercel]: https://vercel.com/
