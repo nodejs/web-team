@@ -29,7 +29,7 @@
 | **[Figma][]**                | Read                               | -           | Write                  | -                 | -                  | Access to this service is controlled by the OpenJS Foundation and @avivkeller, and only covers website-related design files.                                           |
 | **[HackMD][]**               | -                                  | -           | -                      | -                 | Admin              |                                                                                                                                                                        |
 | **[Sentry][]**               | -                                  | -           | -                      | Manager           | Owner              |                                                                                                                                                                        |
-| **[Vercel][]**               | -                                  | -           | -                      | Developer         | Admin              | Along with individual access, credentials for a user with elevated exist in 1Password.                                                                                 |
+| **[Vercel][]**               | -                                  | -           | -                      | Contributor       | Owner              | Along with individual access, credentials for a user with elevated exist in 1Password.                                                                                 |
 
 ## Access Tokens & Automations
 
