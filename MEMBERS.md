@@ -22,7 +22,7 @@
 - [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** <<me@aviv.sh>> (he/him)
 - [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** <<brian.muenzenmeyer@gmail.com>> (he/him)
 - [@canerakdas](https://github.com/canerakdas) - **Caner Akdas** <<canerakdas@gmail.com>> (he/him)
-- [@flakey5](https://github.com/flakey5) - **flakey5** <<me@flakey5.dev>> (he/him)
+- [@flakey5](https://github.com/flakey5) - **flakey5** <<me@flakey5.dev>> (she/her)
 - [@MattIPv4](https://github.com/MattIPv4) - **Matt Cowley** <<me@mattcowley.co.uk>> (he/him)
 - [@MoLow](https://github.com/MoLow) - **Moshe Atlow** <<moshe@atlow.co.il>> (he/him)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** <<cwunder@gnome.org>> (they/them)
