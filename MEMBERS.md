@@ -17,6 +17,12 @@
 - [@mikeesto](https://github.com/mikeesto) - **Michael Esteban** (he/him)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
 
+## Node.js Doc Kit Team (`@nodejs/doc-kit`)
+
+- [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** (he/him)
+- [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him)
+- [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
+
 ## Node.js Web Infra Team (`@nodejs/web-infra`)
 
 - [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** <<me@aviv.sh>> (he/him)
