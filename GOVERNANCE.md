@@ -21,8 +21,6 @@ Members of this team are nominated through the guidelines provided in the [Contr
 
 The Node.js doc-kit Team is responsible for the day-to-day technical development of [nodejs/doc-kit](https://github.com/nodejs/doc-kit), the tooling that generates the Node.js API documentation. This covers adding features, reviewing and landing pull requests, fixing bugs and security issues, and the general maintenance of the repository.
 
-The scope of this team is limited to the [nodejs/doc-kit](https://github.com/nodejs/doc-kit) repository. Members hold `Maintain` on that repository, which grants write access and the ability to manage repository settings, but **not** publishing access: ownership of the npm scopes the project publishes under, and of the Vercel project that serves [doc-kit.nodejs.org](https://doc-kit.nodejs.org/), remains with @nodejs/web-infra. Members of this team may still cut releases through the repository's automated release workflow, which publishes via npm trusted publishing.
-
 Members of this team are nominated through the same process as the [Node.js Web Infra Team](#nodejs-web-infra-team-nodejsweb-infra): either by the Node.js Technical Steering Committee (TSC) or by the Node.js Web Team. Current members of the Node.js Doc Kit Team may also nominate individuals. After a passed nomination, members should submit a PR to add themselves to the list of current members, shown within [MEMBERS.md](https://github.com/nodejs/web-team/blob/main/MEMBERS.md).
 
 ### Node.js Web Infra Team (`@nodejs/web-infra`)
