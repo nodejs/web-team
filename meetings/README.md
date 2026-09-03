@@ -1,14 +1,14 @@
-# Web Team Meetings
+# Web WG Meetings
 
-This document outlines the process for the Node.js Web Team meetings.
+This document outlines the process for the Node.js Web WG meetings.
 
 ## Meeting Schedule
 
-The Web Team holds meetings every 4 weeks to discuss and align on key topics related to Node.js web properties. These meetings help move initiatives forward more efficiently than asynchronous communication alone.
+The Web WG holds meetings every 4 weeks to discuss and align on key topics related to Node.js web properties. These meetings help move initiatives forward more efficiently than asynchronous communication alone.
 
 For exact dates and times, refer to the [Node.js Calendar](https://nodejs.org/calendar).
 
-In rare cases, a Web Team member may call for an additional meeting outside the regular monthly schedule if there are urgent matters that cannot wait until the next scheduled meeting. All other meeting procedures still apply.
+In rare cases, a Web WG member may call for an additional meeting outside the regular monthly schedule if there are urgent matters that cannot wait until the next scheduled meeting. All other meeting procedures still apply.
 
 ## Meeting Types
 
@@ -42,7 +42,7 @@ Each meeting is led by a designated moderator who is responsible for:
 - Ensuring meeting notes are taken and shared
 - Facilitating decision-making when consensus is needed
 
-For regularly scheduled monthly meetings, the moderator is typically a Web Admin. For exceptional meetings called outside the regular schedule, the Web Team member who called the meeting, or a chosen delegate, serves as the moderator.
+For regularly scheduled monthly meetings, the moderator is typically a Web Admin. For exceptional meetings called outside the regular schedule, the Web WG member who called the meeting, or a chosen delegate, serves as the moderator.
 
 ## Agenda Items
 
@@ -55,12 +55,12 @@ Any community member or contributor can request items to be added to the meeting
 
 The agenda is not intended to review or approve all patches; that should happen continuously on GitHub and be handled by the larger group of Collaborators.
 
-At the start of each meeting, the moderator will share the agenda with members of the Web Team. Team members can add any items they like to the agenda at the beginning of each meeting. The moderator and the Web Team cannot veto or remove items added to the agenda.
+At the start of each meeting, the moderator will share the agenda with members of the Web WG. WG members can add any items they like to the agenda at the beginning of each meeting. The moderator and the Web WG cannot veto or remove items added to the agenda.
 
 ## Meeting Participation
 
-Meeting attendance is optional but encouraged for Web Team members. Any community member or contributor is welcome to observe public meetings.
+Meeting attendance is optional but encouraged for Web WG members. Any community member or contributor is welcome to observe public meetings.
 
-Members of the Node.js Technical Steering Committee (TSC) and core collaborators are always welcome to attend and participate in public Web Team meetings, unless otherwise stated.
+Members of the Node.js Technical Steering Committee (TSC) and core collaborators are always welcome to attend and participate in public Web WG meetings, unless otherwise stated.
 
-The Web Team may invite persons or representatives from certain projects to participate in a non-voting capacity when their expertise or input would be valuable to the discussion.
+The Web WG may invite persons or representatives from certain projects to participate in a non-voting capacity when their expertise or input would be valuable to the discussion.

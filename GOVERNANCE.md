@@ -1,6 +1,6 @@
-# Node.js Web Team Governance
+# Node.js Web WG Governance
 
-The Node.js Web Team (@nodejs/web) is a team in the Node.js Project that is composed by a set of subteams. Each containing specific responsibilities and goals.
+The Node.js Web WG (@nodejs/web) is a Working Group in the Node.js Project that is composed by a set of subteams. Each containing specific responsibilities and goals.
 
 ### TSC Oversight
 
@@ -9,13 +9,17 @@ Any website change that expresses a position about a global event or group of pe
 approval. This can be obtained by pinging `@nodejs/tsc` and receive no objections after seven days,
 or by sending an email to `tsc@iojs.org` and receive at least one approval and no objections after seven days.
 
+### OpenJS Oversight and Content Input
+
+Website content within, but not limited to, the [blog](https://nodejs.org/en/blog), [about](https://nodejs.org/en/about), and [partner](https://nodejs.org/en/about/partners) pages are governed by the [content vs. code](https://github.com/nodejs/nodejs.org/blob/main/docs/content-vs-code.md) guidance. Additionally, OpenJS Foundation requests are always honored, such as including project and foundation links in the footer.
+
 ### Node.js Website Team (`@nodejs/nodejs-website`)
 
 The Node.js Website Team is responsible for the day-to-day technical development of the Node.js Website. This is primarily the development of the website itself, adding new features, pages and components, but also fixing any security issues in the website code, handling operational maintenance, and so on.
 
 The maintainers on the Node.js Website Team are responsible for steering the technical direction of the Node.js Website, and reserve the right to make final decisions on any issues or pull requests, in line with the Contribution Guidelines, Collaborator Guidelines, the Code of Conduct and the overall Governance premises of the Node.js project.
 
-Members of this team are nominated through the guidelines provided in the [Contributing Guidelines](https://github.com/nodejs/nodejs.org/blob/main/CONTRIBUTING.md#becoming-a-collaborator) within the [nodejs.org](https://github.com/nodejs/nodejs.org) repository. After a passed nomination, members should submit a PR to add themselves to the list of current members, shown within [MEMBERS.md](https://github.com/nodejs/web-team/blob/main/MEMBERS.md).
+Members of this team are nominated through the guidelines provided in the [Contributing Guidelines](https://github.com/nodejs/nodejs.org/blob/main/CONTRIBUTING.md#becoming-a-collaborator) within the [nodejs.org](https://github.com/nodejs/nodejs.org) repository. After a passed nomination, members should submit a PR to add themselves to the list of current members, shown within the [README.md](https://github.com/nodejs/web-team/blob/main/README.md#members).
 
 ### Node.js Web Infra Team (`@nodejs/web-infra`)
 
@@ -27,7 +31,7 @@ The Node.js Web Infra Team is responsible for maintaining the Infrastructure rel
 
 Web Infra Team members should have access to maintain the services mentioned above.
 
-Members of this team are nominated either by the Node.js Technical Steering Committee (TSC) or the Node.js Build WG and follow the guidelines provided in the Collaborator Guidelines of the Node.js Build WG. Current members of the Node.js Web Infra Team may also nominate individuals.
+Members of this team are nominated by current members of the Node.js Web Infra Team or by the Web Working Group, and follow the guidelines provided in the Collaborator Guidelines of the Node.js Build WG. Nominations are decided by the Working Group, as described in [WG Membership](https://github.com/nodejs/web-team/blob/main/README.md#wg-membership).
 
 \* This team has access to infrastructure providers directly related to the Website only, such as Vercel. Other providers that are shared beyond the Website may be controlled by other teams (for example, the Node.js Build WG owns Cloudflare).
 
@@ -52,10 +56,10 @@ In other words, if someone other than the author requests fast-track on a PR, th
 
 While there are special exceptions that require bypassing this policy, all unorthodox merges should have proper justification in writing in GitHub and/or Slack.
 
-## The Interoperability of the Node.js Web Team
+## The Interoperability of the Node.js Web WG
 
-As seen above, the different teams under the Node.js Web Team umbrella are responsible for having the oversight on different aspects of Node.js's Web-related projects. However, it is important to note that the Node.js Web Team is not a set of siloed teams, but rather a set of teams that work together to achieve the same goal: Providing the best Web Experience for Node.js.
+As seen above, the different teams under the Node.js Web WG umbrella are responsible for having the oversight on different aspects of Node.js's Web-related projects. However, it is important to note that the Node.js Web WG is not a set of siloed teams, but rather a set of teams that work together to achieve the same goal: Providing the best Web Experience for Node.js.
 
 Following this line of thought, the Web Infra Team is responsible for the technical aspects of the Node.js Website (Infrastructure, Framework, CI/CD, etc); The Website Team is responsible for the day-to-day development of the Node.js Website.
 
-But above all, the Web Team should work together to better the Web Experience for Node.js, aiming to provide the best experience for Node.js users.
+But above all, the Web WG should work together to better the Web Experience for Node.js, aiming to provide the best experience for Node.js users.
