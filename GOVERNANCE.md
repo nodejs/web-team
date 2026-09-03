@@ -17,6 +17,12 @@ The maintainers on the Node.js Website Team are responsible for steering the tec
 
 Members of this team are nominated through the guidelines provided in the [Contributing Guidelines](https://github.com/nodejs/nodejs.org/blob/main/CONTRIBUTING.md#becoming-a-collaborator) within the [nodejs.org](https://github.com/nodejs/nodejs.org) repository. After a passed nomination, members should submit a PR to add themselves to the list of current members, shown within [MEMBERS.md](https://github.com/nodejs/web-team/blob/main/MEMBERS.md).
 
+### Node.js Doc Kit Team (`@nodejs/doc-kit`)
+
+The Node.js doc-kit Team is responsible for the day-to-day technical development of [nodejs/doc-kit](https://github.com/nodejs/doc-kit), the tooling that generates the Node.js API documentation. This covers adding features, reviewing and landing pull requests, fixing bugs and security issues, and the general maintenance of the repository.
+
+Members of this team are nominated through the same process as the [Node.js Web Infra Team](#nodejs-web-infra-team-nodejsweb-infra): either by the Node.js Technical Steering Committee (TSC) or by the Node.js Web Team. Current members of the Node.js Doc Kit Team may also nominate individuals. After a passed nomination, members should submit a PR to add themselves to the list of current members, shown within [MEMBERS.md](https://github.com/nodejs/web-team/blob/main/MEMBERS.md).
+
 ### Node.js Web Infra Team (`@nodejs/web-infra`)
 
 The Node.js Web Infra Team is responsible for maintaining the Infrastructure relating to Node.js's Web Presence. The Node.js Web Infra team has the responsibilities of:
@@ -56,6 +62,6 @@ While there are special exceptions that require bypassing this policy, all unort
 
 As seen above, the different teams under the Node.js Web Team umbrella are responsible for having the oversight on different aspects of Node.js's Web-related projects. However, it is important to note that the Node.js Web Team is not a set of siloed teams, but rather a set of teams that work together to achieve the same goal: Providing the best Web Experience for Node.js.
 
-Following this line of thought, the Web Infra Team is responsible for the technical aspects of the Node.js Website (Infrastructure, Framework, CI/CD, etc); The Website Team is responsible for the day-to-day development of the Node.js Website.
+Following this line of thought, the Web Infra Team is responsible for the technical aspects of the Node.js Website (Infrastructure, Framework, CI/CD, etc); The Website Team is responsible for the day-to-day development of the Node.js Website; The Doc Kit Team is responsible for the day-to-day development of the API documentation tooling that the Website consumes.
 
 But above all, the Web Team should work together to better the Web Experience for Node.js, aiming to provide the best experience for Node.js users.
