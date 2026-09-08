@@ -22,7 +22,7 @@ Responsibilities include:
 * Project governance and process for the Working Group, including its own
   governance, contribution, and permissions policies.
 * Managing the membership of `@nodejs/web` and its subteams, including
-  `@nodejs/nodejs-website`, `@nodejs/web-infra`, and `@nodejs/web-admins`.
+  `@nodejs/nodejs-website`, `@nodejs/doc-kit`, `@nodejs/web-infra`, and `@nodejs/web-admins`.
 * Overseeing repositories within the Working Group's scope (
   archiving, removing) and their maintainer teams.
 
