@@ -7,22 +7,20 @@ is a [Node.js Core Working Group][], chartered by the
 This repository contains the charter, governance documentation, workflows, and
 shared resources for the Working Group and its subteams.
 
-The WG is responsible for high-level guidance of the Node.js web presence and has
-final authority over the work described in the
-[charter](GOVERNANCE.md#charter), and over the following teams:
-
-- [`@nodejs/web`](https://github.com/orgs/nodejs/teams/web)
-- [`@nodejs/nodejs-website`](https://github.com/orgs/nodejs/teams/nodejs-website)
-- [`@nodejs/web-infra`](https://github.com/orgs/nodejs/teams/web-infra)
-- [`@nodejs/web-admins`](https://github.com/orgs/nodejs/teams/web-admins)
+The WG is responsible for high-level guidance of the Node.js web presence. What
+it is responsible for, and what remains outside its scope, is defined in the
+[Charter](Charter.md). How it operates is defined in
+[GOVERNANCE.md](GOVERNANCE.md).
 
 For the current list of WG members, see [Members](#members).
 
 ## Working Group Structure
 
-The Working Group consists of three specialized subteams:
+The Working Group ([`@nodejs/web`](https://github.com/orgs/nodejs/teams/web))
+consists of four specialized subteams:
 
 - **Website Team** ([`@nodejs/nodejs-website`](https://github.com/orgs/nodejs/teams/nodejs-website)) - Day-to-day website development
+- **Doc Kit Team** ([`@nodejs/doc-kit`](https://github.com/orgs/nodejs/teams/doc-kit)) - Day-to-day development of [nodejs/doc-kit](https://github.com/nodejs/doc-kit)
 - **Web Infra Team** ([`@nodejs/web-infra`](https://github.com/orgs/nodejs/teams/web-infra)) - Infrastructure and CI/CD
 - **Web Admins Team** ([`@nodejs/web-admins`](https://github.com/orgs/nodejs/teams/web-admins)) - Administrative operations relating to the Working Group
 
@@ -31,11 +29,9 @@ For detailed information about each team's responsibilities, see
 
 ## Governance
 
-The Working Group's charter and the policies it operates under live in
-[GOVERNANCE.md](GOVERNANCE.md):
+The Working Group's scope is defined in the [Charter](Charter.md). The policies
+it operates under live in [GOVERNANCE.md](GOVERNANCE.md):
 
-- [Charter](GOVERNANCE.md#charter) and
-  [Outside the Charter](GOVERNANCE.md#outside-the-charter)
 - [TSC Oversight](GOVERNANCE.md#tsc-oversight) and
   [OpenJS Oversight and Content Input](GOVERNANCE.md#openjs-oversight-and-content-input)
 - [Collaborators](GOVERNANCE.md#collaborators) and
@@ -86,7 +82,8 @@ The Working Group's charter and the policies it operates under live in
 
 | Document                                               | Contents                                                                    |
 | ------------------------------------------------------ | --------------------------------------------------------------------------- |
-| [GOVERNANCE.md](GOVERNANCE.md)                         | Charter, subteam responsibilities, membership, meetings, and decision making |
+| [Charter.md](Charter.md)                               | What the Working Group is, and is not, responsible for                      |
+| [GOVERNANCE.md](GOVERNANCE.md)                         | Subteam responsibilities, membership, meetings, and decision making         |
 | [PERMISSIONS.md](PERMISSIONS.md)                       | Repository, service, and token access held by each team                      |
 | [SECURITY.md](SECURITY.md)                             | How to report a security issue                                               |
 | [INCIDENT_RESPONSE_PLAN.md](INCIDENT_RESPONSE_PLAN.md) | Incident classification, response, and postmortem process                    |

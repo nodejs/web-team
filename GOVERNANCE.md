@@ -6,7 +6,7 @@ The Node.js Web Working Group ([`@nodejs/web`](https://github.com/orgs/nodejs/te
 is a [Node.js Core Working Group][], chartered by the
 [Technical Steering Committee (TSC)][]. The WG is responsible for high-level
 guidance of the Node.js web presence and has final authority over the work
-described in the charter below, and over the following teams:
+described in the [Charter][], and over the following teams:
 
 - [`@nodejs/web`](https://github.com/orgs/nodejs/teams/web)
 - [`@nodejs/nodejs-website`](https://github.com/orgs/nodejs/teams/nodejs-website)
@@ -19,21 +19,17 @@ README.
 
 ## Charter
 
-See the [Charter document](./Charter.md).
+The Working Group's scope, both the work it is responsible for and the work that
+remains outside it, is defined in the [Charter][]. The Charter is the
+authoritative statement of that scope and is reproduced in the TSC's
+[WORKING_GROUPS.md][], so it is not restated here.
 
-### Outside the Charter
+Work that the Charter does not place with the WG remains with the TSC or other WGs. 
+Within the charter, the TSC's only recourse over a Working Group is to revoke its charter.
 
-- **Editorial positions.** Chartering does not change the
-  [TSC Oversight](#tsc-oversight) clause described about global positions or events.
-- **Foundation, Partner, Marketing, or Collaborator content.** Chartering does not change [content input](#openjs-oversight-and-content-input) from stakeholders that have [content vs. code][] scope.
-- **Shared infrastructure.** Cloudflare is owned by the [Build WG][]; the Web WG
-  holds scoped access only. Changes to that boundary require agreement from the
-  Build WG.
-- **Anything not listed above.** Work outside these responsibilities remains with
-  the TSC.
-
-Within the charter, the TSC's only recourse over a Working Group is to revoke its
-charter.
+The Charter defers to two oversight clauses, described below. Chartering does not
+change either of them. Changes to the Cloudflare boundary the Charter describes
+require agreement from the [Build WG][].
 
 ### TSC Oversight
 
@@ -66,7 +62,7 @@ Web Infra Team members should have access to maintain the services mentioned abo
 
 Members of this team are nominated by current members of the Node.js Web Infra Team or by the Web Working Group, and follow the guidelines provided in the Collaborator Guidelines of the Node.js Build WG. Nominations are decided by the Working Group, as described in [WG Membership](#wg-membership).
 
-\* This team has access to infrastructure providers directly related to the Website only, such as Vercel. Other providers that are shared beyond the Website may be controlled by other teams (for example, the Node.js Build WG owns Cloudflare).
+\* This team has access to infrastructure providers directly related to the Website only, such as Vercel. Other providers that are shared beyond the Website may be controlled by other teams (for example, the Node.js Build WG owns Cloudflare). See the [Charter][] for that boundary.
 
 When considering new members, approvers are primarily concerned with **competence** and **trust**. The [language within the Build WG pertaining to competence and trust][build-membership] applies here. The following is repeated, for emphasis:
 
@@ -76,8 +72,6 @@ When considering new members, approvers are primarily concerned with **competenc
 ## The Interoperability of the Node.js Web WG
 
 As seen above, the different teams under the Node.js Web WG umbrella are responsible for having the oversight on different aspects of Node.js's Web-related projects. However, it is important to note that the Node.js Web WG is not a set of siloed teams, but rather a set of teams that work together to achieve the same goal: Providing the best Web Experience for Node.js.
-
-Following this line of thought, the Web Infra Team is responsible for the technical aspects of the Node.js Website (Infrastructure, Framework, CI/CD, etc); The Website Team is responsible for the day-to-day development of the Node.js Website.
 
 But above all, the Web WG should work together to better the Web Experience for Node.js, aiming to provide the best experience for Node.js users.
 
@@ -305,6 +299,7 @@ The [Node.js Moderation Policy][] applies to this WG.
 The [Node.js Code of Conduct][] applies to this WG.
 
 [Build WG]: https://github.com/nodejs/build
+[Charter]: ./Charter.md
 [Consensus Seeking]: https://en.wikipedia.org/wiki/Consensus-seeking_decision-making
 [Contributing Guidelines]: https://github.com/nodejs/nodejs.org/blob/main/CONTRIBUTING.md#becoming-a-collaborator
 [Approval Process]: https://github.com/nodejs/nodejs.org/blob/main/docs/collaborator-guide.md#approval-process
@@ -314,6 +309,7 @@ The [Node.js Code of Conduct][] applies to this WG.
 [TSC Charter]: https://github.com/nodejs/TSC/blob/main/TSC-Charter.md
 [TSC quorum]: https://github.com/nodejs/TSC/issues/253
 [Technical Steering Committee (TSC)]: https://github.com/nodejs/TSC/blob/main/TSC-Charter.md
+[WORKING_GROUPS.md]: https://github.com/nodejs/TSC/blob/main/WORKING_GROUPS.md
 [Timing Requirements]: https://github.com/nodejs/nodejs.org/blob/main/docs/collaborator-guide.md#timing-requirements
 [build-membership]: https://github.com/nodejs/build/blob/main/GOVERNANCE.md#wg-membership
 [content vs. code]: https://github.com/nodejs/nodejs.org/blob/main/docs/content-vs-code.md
