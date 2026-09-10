@@ -128,7 +128,7 @@ within the WG's scope:
 
 Pull requests may be merged immediately when they contain critical bug fixes,
 short errata such as typos from a previous pull request, or critical changes
-considered "showstoppers" for the website's functionality. Otherwise, landing
+considered "showstoppers" for scoped functionality. Otherwise, landing
 before the minimum open time requires the [Fast-Track Policy](#fast-track-policy)
 below, which is stricter than the fast-tracking process described in the
 Collaborator Guide.
