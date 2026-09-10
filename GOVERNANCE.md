@@ -299,7 +299,7 @@ The [Node.js Moderation Policy][] applies to this WG.
 The [Node.js Code of Conduct][] applies to this WG.
 
 [Build WG]: https://github.com/nodejs/build
-[Charter]: ./Charter.md
+[Charter]: ./CHARTER.md
 [Consensus Seeking]: https://en.wikipedia.org/wiki/Consensus-seeking_decision-making
 [Contributing Guidelines]: https://github.com/nodejs/nodejs.org/blob/main/CONTRIBUTING.md#becoming-a-collaborator
 [Approval Process]: https://github.com/nodejs/nodejs.org/blob/main/docs/collaborator-guide.md#approval-process

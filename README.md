@@ -9,7 +9,7 @@ shared resources for the Working Group and its subteams.
 
 The WG is responsible for high-level guidance of the Node.js web presence. What
 it is responsible for, and what remains outside its scope, is defined in the
-[Charter](Charter.md). How it operates is defined in
+[Charter](CHARTER.md). How it operates is defined in
 [GOVERNANCE.md](GOVERNANCE.md).
 
 For the current list of WG members, see [Members](#members).
@@ -29,7 +29,7 @@ For detailed information about each team's responsibilities, see
 
 ## Governance
 
-The Working Group's scope is defined in the [Charter](Charter.md). The policies
+The Working Group's scope is defined in the [Charter](CHARTER.md). The policies
 it operates under live in [GOVERNANCE.md](GOVERNANCE.md):
 
 - [TSC Oversight](GOVERNANCE.md#tsc-oversight) and
@@ -82,7 +82,7 @@ it operates under live in [GOVERNANCE.md](GOVERNANCE.md):
 
 | Document                                               | Contents                                                                    |
 | ------------------------------------------------------ | --------------------------------------------------------------------------- |
-| [Charter.md](Charter.md)                               | What the Working Group is, and is not, responsible for                      |
+| [CHARTER.md](CHARTER.md)                               | What the Working Group is, and is not, responsible for                      |
 | [GOVERNANCE.md](GOVERNANCE.md)                         | Subteam responsibilities, membership, meetings, and decision making         |
 | [PERMISSIONS.md](PERMISSIONS.md)                       | Repository, service, and token access held by each team                      |
 | [SECURITY.md](SECURITY.md)                             | How to report a security issue                                               |
