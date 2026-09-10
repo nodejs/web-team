@@ -1,4 +1,4 @@
-Web Working Group Charter
+# Web Working Group Charter
 
 The Web Working Group is responsible for the Node.js project's web presence: the
 development, operation, and security of nodejs.org and the infrastructure that
@@ -36,4 +36,5 @@ The following remain outside the charter:
 * Cloudflare, which is owned by the Build Working Group; the Web Working Group
   holds scoped access only.
 
-  For the current list of WG members, see the project [README.md](./README.md).
+For the current list of WG members, see the
+[README](https://github.com/nodejs/web-team/blob/main/README.md#members).
