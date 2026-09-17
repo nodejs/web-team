@@ -4,12 +4,12 @@ The Node.js Web Working Group ([`@nodejs/web`](https://github.com/orgs/nodejs/te
 is a [Node.js Core Working Group][], chartered by the
 [Technical Steering Committee (TSC)][].
 
-This repository contains the charter, governance documentation, workflows, and
+This repository contains the governance documentation, workflows, and
 shared resources for the Working Group and its subteams.
 
 The WG is responsible for high-level guidance of the Node.js web presence. What
 it is responsible for, and what remains outside its scope, is defined in the
-[Charter](CHARTER.md). How it operates is defined in
+[Charter](GOVERNANCE.md#charter). How it operates is defined in the rest of
 [GOVERNANCE.md](GOVERNANCE.md).
 
 For the current list of WG members, see [Members](#members).
@@ -29,9 +29,10 @@ For detailed information about each team's responsibilities, see
 
 ## Governance
 
-The Working Group's scope is defined in the [Charter](CHARTER.md). The policies
-it operates under live in [GOVERNANCE.md](GOVERNANCE.md):
+The Working Group's scope and the policies it operates under both live in
+[GOVERNANCE.md](GOVERNANCE.md):
 
+- [Charter](GOVERNANCE.md#charter), the scope of the WG
 - [TSC Oversight](GOVERNANCE.md#tsc-oversight) and
   [OpenJS Oversight and Content Input](GOVERNANCE.md#openjs-oversight-and-content-input)
 - [Collaborators](GOVERNANCE.md#collaborators) and
@@ -82,8 +83,7 @@ it operates under live in [GOVERNANCE.md](GOVERNANCE.md):
 
 | Document                                               | Contents                                                                    |
 | ------------------------------------------------------ | --------------------------------------------------------------------------- |
-| [CHARTER.md](CHARTER.md)                               | What the Working Group is, and is not, responsible for                      |
-| [GOVERNANCE.md](GOVERNANCE.md)                         | Subteam responsibilities, membership, meetings, and decision making         |
+| [GOVERNANCE.md](GOVERNANCE.md)                         | Charter, subteam responsibilities, membership, meetings, and decision making |
 | [PERMISSIONS.md](PERMISSIONS.md)                       | Repository, service, and token access held by each team                      |
 | [SECURITY.md](SECURITY.md)                             | How to report a security issue                                               |
 | [INCIDENT_RESPONSE_PLAN.md](INCIDENT_RESPONSE_PLAN.md) | Incident classification, response, and postmortem process                    |
