@@ -17,7 +17,7 @@
 - [@mikeesto](https://github.com/mikeesto) - **Michael Esteban** (he/him)
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
 
-## Node.js Doc Kit Team (`@nodejs/doc-kit`)
+## Node.js doc-kit Team (`@nodejs/doc-kit`)
 
 - [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** (he/him)
 - [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him)
