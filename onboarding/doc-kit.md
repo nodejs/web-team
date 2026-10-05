@@ -1,6 +1,6 @@
 # @nodejs/doc-kit Onboarding
 
-This document is an outline of the tasks necessary to onboard a new member of the Doc Kit team (@nodejs/doc-kit).
+This document is an outline of the tasks necessary to onboard a new member of the doc-kit team (@nodejs/doc-kit).
 
 Please note that these tasks should only be performed after an individual's nomination has passed.
 To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
@@ -9,7 +9,9 @@ To start the nomination process, see [GOVERNANCE.md](../GOVERNANCE.md).
 
 - [ ] Add the **Nominee** to the [`@nodejs/doc-kit`](https://github.com/orgs/nodejs/teams/doc-kit) team on GitHub.
 - [ ] An OpenJS Slack Admin should add their Slack account to the `nodejs-website-team` team.
-- [ ] Add the **Nominee** to the `#nodejs-website` OpenJS Slack channel.
+- [ ] Add the **Nominee** to the following OpenJS Slack channels:
+  - [ ] `#nodejs-website`
+  - [ ] `#nodejs-web-infra`
 
 ### Recommendations
 
