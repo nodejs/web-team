@@ -23,9 +23,9 @@
 - [@avivkeller](https://github.com/avivkeller) - **Aviv Keller** (he/him)
 - [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - **Brian Muenzenmeyer** (he/him)
 - [@btea](https://github.com/btea) - **btea**
-- [@moshams272](https://github.com/moshams272) - **Mohamed Shams El-Deen** (pending invitation)
+- [@moshams272](https://github.com/moshams272) - **Mohamed Shams El-Deen**
 - [@ovflowd](https://github.com/ovflowd) - **Claudio Wunder** (they/them)
-- [@ryzrr](https://github.com/ryzrr) - **Nikhil Kumar Rajak** (pending invitation)
+- [@ryzrr](https://github.com/ryzrr) - **Nikhil Kumar Rajak**
 
 ## Node.js Web Infra Team (`@nodejs/web-infra`)
 
