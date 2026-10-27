@@ -33,6 +33,10 @@ inputs:
     description: "The token to use for checkout"
     required: false
     default: ${{ github.token }}
+  cache:
+    description: "Whether to restore and save the package manager cache. Set to false in jobs that publish or hold secrets, so a poisoned cache can't reach them"
+    required: false
+    default: "true"
 
 runs:
   using: "composite"
@@ -60,7 +64,8 @@ runs:
       with:
         node-version-file: ".nvmrc"
         registry-url: ${{ inputs.registry-url }}
-        cache: ${{ inputs.pnpm == 'true' && 'pnpm' || 'npm' }}
+        cache: ${{ inputs.cache == 'true' && (inputs.pnpm == 'true' && 'pnpm' || 'npm') || '' }}
+        package-manager-cache: ${{ inputs.cache == 'true' }}
 
     - name: Setup Node.js (with specified version)
       if: inputs.use-version-file != 'true'
@@ -68,7 +73,8 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
         registry-url: ${{ inputs.registry-url }}
-        cache: ${{ inputs.pnpm == 'true' && 'pnpm' || 'npm' }}
+        cache: ${{ inputs.cache == 'true' && (inputs.pnpm == 'true' && 'pnpm' || 'npm') || '' }}
+        package-manager-cache: ${{ inputs.cache == 'true' }}
 
     - name: Install dependencies with pnpm
       if: inputs.pnpm == 'true'
