@@ -1,8 +1,8 @@
 import { readFile } from "node:fs/promises";
 
 const CONFIG = {
-  FILE: "MEMBERS.md",
-  HEADER: "## Node.js Website Team (`@nodejs/nodejs-website`)",
+  FILE: "README.md",
+  HEADER: "### Node.js Website Team (`@nodejs/nodejs-website`)",
   INACTIVE_MONTHS: 12,
   ISSUE_TITLE: "Inactive Collaborator Report",
   ISSUE_LABELS: ["meta", "inactive-collaborator-report"],
